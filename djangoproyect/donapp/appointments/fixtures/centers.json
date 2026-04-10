@@ -1,0 +1,32 @@
+[
+  {
+    "model": "appointments.donationcenter",
+    "pk": 1,
+    "fields": {
+      "name": "Hospital Clínico UC",
+      "address": "Marcoleta 367",
+      "comuna": "Santiago",
+      "phone": "+56 2 2354 3000"
+    }
+  },
+  {
+    "model": "appointments.donationcenter",
+    "pk": 2,
+    "fields": {
+      "name": "Hospital del Salvador",
+      "address": "Av Salvador 364",
+      "comuna": "Providencia",
+      "phone": "+56 2 2575 5000"
+    }
+  },
+  {
+    "model": "appointments.donationcenter",
+    "pk": 3,
+    "fields": {
+      "name": "Clínica Alemana",
+      "address": "Av Vitacura 5951",
+      "comuna": "Vitacura",
+      "phone": "+56 2 2210 1111"
+    }
+  }
+]

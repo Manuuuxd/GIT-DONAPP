@@ -1,0 +1,94 @@
+<changelist name="Uncommitted_changes_before_Update_at_17_06_2025_17_36_[Changes]" date="1750196190282" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_06_2025_17_36_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 17/06/2025 17:36 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/apps.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/management/commands/cargar_preguntas.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/migrations/0002_answer_label_question_area_question_level_and_more.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/migrations/0001_initial.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/urls.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/donapp/urls.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/manage.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/donapp/asgi.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/donapp/settings.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/migrations/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/donapp/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/admin.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/tests.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/views.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/migrations/0001_initial.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/models.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/management/commands/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/serializers.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/management/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/donapp/wsgi.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/admin.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/migrations/__init__.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/apps.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/views.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/models.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/serializers.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/tests.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/usuarios/urls.py" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="djangoproyect/donapp/trivia/__init__.py" />
+  </binary>
+</changelist>

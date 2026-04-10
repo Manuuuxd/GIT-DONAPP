@@ -1,0 +1,392 @@
+[
+  {
+    "model": "survey.survey",
+    "pk": 1,
+    "fields": {
+      "title": "Tu experiencia general en el Centro Metropolitano de Sangre",
+      "description": "Encuesta sobre tu experiencia general en el centro metropolitano de sangre.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 2,
+    "fields": {
+      "title": "Opinión sobre el proceso de registro de donación",
+      "description": "Encuesta sobre opinión sobre el proceso de registro de donación.",
+      "questions": [
+        "¿El tiempo de registro fue razonable?",
+        "¿La información solicitada fue clara?",
+        "¿Recomendarías mejoras en el sistema de registro?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 3,
+    "fields": {
+      "title": "Comodidad y ambiente en el área de donación",
+      "description": "Encuesta sobre comodidad y ambiente en el área de donación.",
+      "questions": [
+        "¿El espacio físico fue cómodo?",
+        "¿La limpieza cumplió tus expectativas?",
+        "¿Te gustaría música o entretenimiento en la espera?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 4,
+    "fields": {
+      "title": "Calidad de la atención brindada por el personal",
+      "description": "Encuesta sobre calidad de la atención brindada por el personal.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 5,
+    "fields": {
+      "title": "Tiempo de espera en tu última visita",
+      "description": "Encuesta sobre tiempo de espera en tu última visita.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 6,
+    "fields": {
+      "title": "Claridad de la información recibida sobre la donación",
+      "description": "Encuesta sobre claridad de la información recibida sobre la donación.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 7,
+    "fields": {
+      "title": "Satisfacción con la limpieza y seguridad del centro",
+      "description": "Encuesta sobre satisfacción con la limpieza y seguridad del centro.",
+      "questions": [
+        "¿El espacio físico fue cómodo?",
+        "¿La limpieza cumplió tus expectativas?",
+        "¿Te gustaría música o entretenimiento en la espera?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 8,
+    "fields": {
+      "title": "Recomendaciones para mejorar la atención al donante",
+      "description": "Encuesta sobre recomendaciones para mejorar la atención al donante.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 9,
+    "fields": {
+      "title": "Cómo supiste de tu última campaña de donación",
+      "description": "Encuesta sobre cómo supiste de tu última campaña de donación.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 10,
+    "fields": {
+      "title": "¿Recomendarías donar sangre a un amigo?",
+      "description": "Encuesta sobre ¿recomendarías donar sangre a un amigo?.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 11,
+    "fields": {
+      "title": "Tu motivación principal para donar sangre",
+      "description": "Encuesta sobre tu motivación principal para donar sangre.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 12,
+    "fields": {
+      "title": "Facilidad para programar citas a través de Donapp",
+      "description": "Encuesta sobre facilidad para programar citas a través de donapp.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 13,
+    "fields": {
+      "title": "Diseño y navegación en la app Donapp",
+      "description": "Encuesta sobre diseño y navegación en la app donapp.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 14,
+    "fields": {
+      "title": "Funciones más útiles de Donapp para ti",
+      "description": "Encuesta sobre funciones más útiles de donapp para ti.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 15,
+    "fields": {
+      "title": "Ideas para nuevas funcionalidades en Donapp",
+      "description": "Encuesta sobre ideas para nuevas funcionalidades en donapp.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 16,
+    "fields": {
+      "title": "¿Qué tan útiles son las notificaciones y recordatorios?",
+      "description": "Encuesta sobre ¿qué tan útiles son las notificaciones y recordatorios?.",
+      "questions": [
+        "¿Recibes notificaciones con claridad?",
+        "¿Te resultan oportunas?",
+        "¿Te gustaría personalizar su frecuencia?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 17,
+    "fields": {
+      "title": "Preferencia de canal de comunicación",
+      "description": "Encuesta sobre preferencia de canal de comunicación.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 18,
+    "fields": {
+      "title": "Frecuencia con la que te gustaría recibir recordatorios",
+      "description": "Encuesta sobre frecuencia con la que te gustaría recibir recordatorios.",
+      "questions": [
+        "¿Recibes notificaciones con claridad?",
+        "¿Te resultan oportunas?",
+        "¿Te gustaría personalizar su frecuencia?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 19,
+    "fields": {
+      "title": "¿Te sentiste acompañado/a durante la donación?",
+      "description": "Encuesta sobre ¿te sentiste acompañado/a durante la donación?.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 20,
+    "fields": {
+      "title": "Rapidez del servicio en el Centro Metropolitano",
+      "description": "Encuesta sobre rapidez del servicio en el centro metropolitano.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 21,
+    "fields": {
+      "title": "Satisfacción con la información nutricional y post-donación",
+      "description": "Encuesta sobre satisfacción con la información nutricional y post-donación.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 22,
+    "fields": {
+      "title": "¿Te resultó sencillo ubicar el centro?",
+      "description": "Encuesta sobre ¿te resultó sencillo ubicar el centro?.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 23,
+    "fields": {
+      "title": "Valoración global de tu experiencia como donante",
+      "description": "Encuesta sobre valoración global de tu experiencia como donante.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 24,
+    "fields": {
+      "title": "¿Cómo mejorar la comodidad en sala de espera?",
+      "description": "Encuesta sobre ¿cómo mejorar la comodidad en sala de espera?.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 25,
+    "fields": {
+      "title": "Experiencia usando el sistema de citas en Donapp",
+      "description": "Encuesta sobre experiencia usando el sistema de citas en donapp.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 26,
+    "fields": {
+      "title": "Opinión sobre la claridad del consentimiento informado",
+      "description": "Encuesta sobre opinión sobre la claridad del consentimiento informado.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 27,
+    "fields": {
+      "title": "Calidad de la atención telefónica o en línea",
+      "description": "Encuesta sobre calidad de la atención telefónica o en línea.",
+      "questions": [
+        "¿Cómo calificarías la atención recibida?",
+        "¿El proceso de registro fue claro?",
+        "¿Te sentiste cómodo durante la donación?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 28,
+    "fields": {
+      "title": "Disponibilidad de horarios para citas",
+      "description": "Encuesta sobre disponibilidad de horarios para citas.",
+      "questions": [
+        "¿Encontraste horarios convenientes?",
+        "¿Hubo flexibilidad para cambios?",
+        "¿Preferirías horarios extendidos?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 29,
+    "fields": {
+      "title": "¿Qué tan confiable consideras la información de Donapp?",
+      "description": "Encuesta sobre ¿qué tan confiable consideras la información de donapp?.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  },
+  {
+    "model": "survey.survey",
+    "pk": 30,
+    "fields": {
+      "title": "Tu satisfacción general con Donapp y el Centro",
+      "description": "Encuesta sobre tu satisfacción general con donapp y el centro.",
+      "questions": [
+        "¿La interfaz fue intuitiva?",
+        "¿Encontraste lo que buscabas fácilmente?",
+        "¿Qué mejorarías de la app?"
+      ]
+    }
+  }
+]

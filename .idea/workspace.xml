@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e9667f3-744a-45cf-b7d3-a25064f109de" name="Changes" comment="Videjuego 1.1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/lib/screens/politica_privacidad_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/screens/politica_privacidad_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/lib/screens/profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/lib/screens/profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pubspec.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GabrielLeight&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jmanzanom/DonApp.git&quot;,
+    &quot;accountId&quot;: &quot;d71537d0-a597-4b41-98a3-5013e8b67a2b&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ybbE7gK2DmZcIpLau8CpIDO4Y9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Flutter.Donapp.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.main.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.sim.dart.executor&quot;: &quot;Run&quot;,
+    &quot;Flutter.transfusion.dart.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;ScreenRecorder.SavePath&quot;: &quot;C:\\Users\\GABRIEL\\Pictures&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Escritorio/ULTIMO/DonApp&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\audios" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\images\TransfusionJuego" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\images\TransfusionJuego\PedidoSangre" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\djangoproyect\donapp\Whatsapp" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\djangoproyect" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\audios" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\images\TransfusionJuego" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\djangoproyect\donapp\survey\fixtures" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\djangoproyect\donapp" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\djangoproyect\donapp\survey" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\lib\screens\campana" />
+      <recent name="C:\Users\GABRIEL\Documents\FERIA\frontend\assets\images\TransfusionJuego\BolsasSangre" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Flutter.Donapp">
+    <configuration name="Donapp" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/Frontend/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/frontend/lib/screens/campana/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sim.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/frontend/lib/screens/Simulacion/sim.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="transfusion.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/frontend/lib/screens/Minigames/transfusion/transfusion.dart" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Flutter.transfusion.dart" />
+        <item itemvalue="Flutter.sim.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e9667f3-744a-45cf-b7d3-a25064f109de" name="Changes" comment="" />
+      <created>1749138041853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749138041853</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Register Funciona">
+      <option name="closed" value="true" />
+      <created>1750125525974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750125525974</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Register Funciona">
+      <option name="closed" value="true" />
+      <created>1750126141190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750126141190</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Probando formularios">
+      <option name="closed" value="true" />
+      <created>1750207663109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750207663109</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Probando formularios">
+      <option name="closed" value="true" />
+      <created>1750209969606</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750209969606</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cambios Modelos">
+      <option name="closed" value="true" />
+      <created>1750211187312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750211187312</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Formulario funciona bien">
+      <option name="closed" value="true" />
+      <created>1750222723019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1750222723019</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Backend-IA funciona, falta ver backend-frontend">
+      <option name="closed" value="true" />
+      <created>1750227238918</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1750227238918</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Subiendo cosas para evitar el venv">
+      <option name="closed" value="true" />
+      <created>1750285317341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750285317341</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Subiendo cosas para evitar el venv">
+      <option name="closed" value="true" />
+      <created>1750286020771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1750286020771</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Trivia funcionando?">
+      <option name="closed" value="true" />
+      <created>1750297150630</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1750297150630</updated>
+    </task>
+    <task id="LOCAL-00011" summary="mini push">
+      <option name="closed" value="true" />
+      <created>1750306080606</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750306080606</updated>
+    </task>
+    <task id="LOCAL-00012" summary="mini push">
+      <option name="closed" value="true" />
+      <created>1750308551725</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1750308551725</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Detalles finales">
+      <option name="closed" value="true" />
+      <created>1750336463546</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1750336463546</updated>
+    </task>
+    <task id="LOCAL-00014" summary="imagenes">
+      <option name="closed" value="true" />
+      <created>1756843842408</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756843842409</updated>
+    </task>
+    <task id="LOCAL-00015" summary="imagenes">
+      <option name="closed" value="true" />
+      <created>1756843905881</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756843905881</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Videjuego 1.0">
+      <option name="closed" value="true" />
+      <created>1756946542722</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1756946542722</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Register Funciona" />
+    <MESSAGE value="Probando formularios" />
+    <MESSAGE value="cambios Modelos" />
+    <MESSAGE value="Formulario funciona bien" />
+    <MESSAGE value="Backend-IA funciona, falta ver backend-frontend" />
+    <MESSAGE value="Subiendo cosas para evitar el venv" />
+    <MESSAGE value="Trivia funcionando?" />
+    <MESSAGE value="mini push" />
+    <MESSAGE value="Detalles finales" />
+    <MESSAGE value="imagenes" />
+    <MESSAGE value="Videjuego 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Videjuego 1.0" />
+  </component>
+</project>

@@ -1,0 +1,32 @@
+{
+    "puede_donar": {
+        "titulo": "¡Perfecto! ✅ Gracias por completar nuestro formulario de elegibilidad para donar sangre.",
+        "resumen": "➡️ ¡Puedes donar sangre hoy mismo!",
+        "explicacion": "Cumples con todos los criterios actuales de elegibilidad definidos por el Ministerio de Salud para poder donar en el Centro Metropolitano de Sangre. Estás en condiciones óptimas para realizar una donación voluntaria y segura.",
+        "siguiente_paso": "Puedes reservar tu hora en el centro de donación más cercano o participar en una colecta desde la sección \"Agendar donación\" de la aplicación.",
+        "proxima_donacion": {
+            "disponible_en": "hoy",
+            "mensaje_amigable": "Puedes donar en cuanto lo decidas. ¡Gracias por estar disponible para ayudar!"
+        }
+    },
+    "no_puede_donar": {
+        "titulo": "¡Gracias por tu honestidad! 🩺",
+        "resumen": "➡️ Actualmente no puedes donar sangre.",
+        "explicacion": "Algunos de los datos que ingresaste indican que, por el momento, no cumples con uno o más de los criterios establecidos para una donación segura tanto para ti como para quien la reciba.",
+        "siguiente_paso": "Por favor revisa los requisitos de donación en la sección de información de la app. Puedes volver a intentar el formulario en el futuro si tu situación cambia, mientras tanto, revisa la app y disfruta de aprender de una manera innovadora.",
+        "proxima_donacion": {
+            "disponible_en": "variable",
+            "mensaje_amigable": "Dependiendo del criterio que no se cumple, podrías volver a donar más adelante. Revisa tus resultados específicos o consulta con un profesional de salud."
+        }
+    },
+    "debe_consultar": {
+        "titulo": "Gracias por tu interés en donar ❤️",
+        "resumen": "➡️ Necesitamos revisar algunos datos antes de continuar.",
+        "explicacion": "Algunas de tus respuestas requieren una evaluación más detallada o deben ser validadas por un profesional. Esto es parte de nuestro compromiso por asegurar donaciones seguras para todos.",
+        "siguiente_paso": "Te recomendamos contactar al Centro Metropolitano de Sangre al 📞 +56 2 2574 8610 o visitar la sección de ayuda en la aplicación para orientación personalizada.",
+        "proxima_donacion": {
+            "disponible_en": "dependiente de revisión médica",
+            "mensaje_amigable": "Una vez resuelta la observación, podrías estar habilitado/a para donar. Estamos para ayudarte en cada paso."
+        }
+    }
+}

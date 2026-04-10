@@ -1,0 +1,1023 @@
+Index: djangoproyect/donapp/requirements.txt
+===================================================================
+diff --git a/djangoproyect/donapp/requirements.txt b/djangoproyect/donapp/requirements.txt
+deleted file mode 100644
+--- a/djangoproyect/donapp/requirements.txt	(revision 9596e7a8473344271baad1630b0c20b9bfd0455a)
++++ /dev/null	(revision 9596e7a8473344271baad1630b0c20b9bfd0455a)
+@@ -1,6 +0,0 @@
+-asgiref==3.8.1
+-Django==5.2.2
+-djangorestframework==3.16.0
+-psycopg[binary]==3.1.19
+-sqlparse==0.5.3
+-tzdata==2025.2
+Index: djangoproyect/donapp/A&Q_clasifieds.json
+===================================================================
+diff --git a/djangoproyect/donapp/A&Q_clasifieds.json b/djangoproyect/donapp/A&Q_clasifieds.json
+deleted file mode 100644
+--- a/djangoproyect/donapp/A&Q_clasifieds.json	(revision 9596e7a8473344271baad1630b0c20b9bfd0455a)
++++ /dev/null	(revision 9596e7a8473344271baad1630b0c20b9bfd0455a)
+@@ -1,1002 +0,0 @@
+-[
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuál es la edad mínima para donar en el Centro Metropolitano de sangre?",
+-        "Alternativa 1":"16 años",
+-        "Alternativa 2":"15 años",
+-        "Alternativa 3":"18 años",
+-        "Correcta":"C",
+-        "Explicación":"A pesar de que en otras entidades  se puede donar con autorización a los 17 años, en la casa del donante se puede a partir de los 18",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Edad máxima para donar sangre?",
+-        "Alternativa 1":"65",
+-        "Alternativa 2":"70",
+-        "Alternativa 3":"75",
+-        "Correcta":"A",
+-        "Explicación":"Límite de 65 pero en casos particulares se puede donar si se cuenta con autorización médica",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuánto peso mínimo debes tener para ser donante?",
+-        "Alternativa 1":"45 kg",
+-        "Alternativa 2":"50 kg",
+-        "Alternativa 3":"55 kg",
+-        "Correcta":"B",
+-        "Explicación":"La normativa MINSAL exige un peso mínimo de 50 kg para cuidar tu salud durante la donación",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Sueño mínimo requerido:",
+-        "Alternativa 1":"3 h",
+-        "Alternativa 2":"5 h",
+-        "Alternativa 3":"8 h",
+-        "Correcta":"B",
+-        "Explicación":"Debes dormir al menos 5 horas antes de donar. Si estás cansado, no es seguro.",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Frecuencia para donar si eres mujer",
+-        "Alternativa 1":"3 meses",
+-        "Alternativa 2":"4 meses",
+-        "Alternativa 3":"6 meses",
+-        "Correcta":"B",
+-        "Explicación":"Cada 4 meses puedes donar sangre si eres mujer. Es el tiempo que necesita el cuerpo de las mujeres para reponerse.",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuál es la duración máxima de una bolsa de sangre refrigerada?",
+-        "Alternativa 1":"21 días",
+-        "Alternativa 2":"35 días",
+-        "Alternativa 3":"42 días",
+-        "Correcta":"C",
+-        "Explicación":"La sangre puede conservarse hasta 42 días entre 2 °C y 10 °C",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Qué volumen se extrae en una donación estándar?",
+-        "Alternativa 1":"250 ml",
+-        "Alternativa 2":"350-450 ml",
+-        "Alternativa 3":"500-600 ml",
+-        "Correcta":"B",
+-        "Explicación":"Se extraen entre 350 y 450 ml, un porcentaje seguro de tu volumen sanguíneo",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Personas con hipertensión controlada pueden donar sangre.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Si no hay crisis recientes y la presión está controlada, es permitido.",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Es necesario ayunar antes de donar sangre?",
+-        "Alternativa 1":"No",
+-        "Alternativa 2":"Entre 4 y 6 horas",
+-        "Alternativa 3":"8 horas",
+-        "Correcta":"A",
+-        "Explicación":"Se recomienda haber ingerido alimentos en las últimas 5 horas",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Qué intervalo deben respetar los hombres entre donaciones?",
+-        "Alternativa 1":"1 mes",
+-        "Alternativa 2":"3 meses",
+-        "Alternativa 3":"6 meses",
+-        "Correcta":"B",
+-        "Explicación":"Los hombres pueden donar cada 3 meses, mientras que las mujeres cada 4",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Si tienes un tatuaje reciente, puedes donar antes de los 6 meses.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Se debe postergar al menos 6 meses tras hacerse tatuajes o piercings .",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"El VIH la única enfermedad testeada antes de donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"También se testean hepatitis B y C, sífilis y Chagas.",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Se debe pesar mínimo 60 kg para donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"el mínimo es de 50 kg",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Qué grupo puede entregar sangre a todos?",
+-        "Alternativa 1":"AB+",
+-        "Alternativa 2":"O-",
+-        "Alternativa 3":"A+",
+-        "Correcta":"B",
+-        "Explicación":"O– puede donar a todos los grupos, pero solo puede recibir de O–.",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Necesitas un ayuno total para donar",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Necesitas haber comido en las últimas 5 horas",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuál es el documento válido para donar?",
+-        "Alternativa 1":"Carnet de Identidad",
+-        "Alternativa 2":"Tarjeta de crédito",
+-        "Alternativa 3":"No es necesario un documento",
+-        "Correcta":"A",
+-        "Explicación":"Se requiere identificación oficial con n° de rut, pasaporte y foto",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Puedo donar si tengo un resfrío leve",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Se debbe esperar  hasta la recuperación",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Puedo donar hoy si este mes comencé con una nueva pareja sexual",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debes esperar al menos 6 meses para poder donar",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"No puedo donar nunca si he tenido más de una pareja sexual",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debes esperar al menos 6 meses para poder donar",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Puedo donar si he tenido diarrea esta semana",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"No puedes donar si has tenido diarrea en los últimos 14 días",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"No puedo donar si estoy embarazada",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"No se puede donar si estás embarazada, has tenido un parto o aborto en los últimos 6 meses",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Puedes donar si tuviste hepatitis antes de los 12.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Solo hepatitis después de esa edad te inhabilitan permanentemente.",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Puedes hacer deporte intenso justo después de donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debes evitar esfuerzos intensos al menos 12 horas.",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuál es la temperatura adecuada de transporte de sangre?",
+-        "Alternativa 1":"entre 2°C a 10°C",
+-        "Alternativa 2":"entre 0°C y 2°C",
+-        "Alternativa 3":"entre 10°C y 20°C",
+-        "Correcta":"A",
+-        "Explicación":"Refrigeración adecuada preserva la calidad y seguridad.",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"Si eres alérgico, estás automáticamente inhabilitado para donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Solo si estás con síntomas o tratamiento agudo no puedes donar.",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Se puede donar si estás tomando anticonceptivos orales?",
+-        "Alternativa 1":"Sí",
+-        "Alternativa 2":"No",
+-        "Alternativa 3":"Depende la marca",
+-        "Correcta":"A",
+-        "Explicación":"No hay contraindicación médica para quienes usan anticonceptivos.",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"El uso de piercing reciente (<12 meses) impide donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Hay que esperar al menos 12 meses por riesgo de infección.",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"¿Cuál es la vida útil de los glóbulos rojos refrigerados?",
+-        "Alternativa 1":21,
+-        "Alternativa 2":35,
+-        "Alternativa 3":42,
+-        "Correcta":"C",
+-        "Explicación":"En refrigeración, los glóbulos pueden usarse hasta 42 días.",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"El grupo AB+ es receptor universal.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Puede recibir sangre de cualquier grupo, pero solo donar a AB+",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Inicial",
+-        "Pregunta":"El consentimiento informado puede ser verbal.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debe ser por escrito y firmado antes de cada donación.",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Las plaquetas se almacenan a 22 °C con agitación constante.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":" Se guardan en temperatura ambiente (20–24 °C) bajo agitación durante hasta 5 días .",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"¿Cada cuánto tiempo puedes donar plaquetas por aféresis?",
+-        "Alternativa 1":"Cada 7 días",
+-        "Alternativa 2":"Cada 14 días",
+-        "Alternativa 3":"Cada mes",
+-        "Correcta":"A",
+-        "Explicación":"La normativa permite aféresis de plaquetas cada 7 días, hasta 24 veces al año",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Las bolsas con hemólisis detectable deben descartarse de inmediato.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Implica riesgo para el receptor, por normativa",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"El plasma fresco se puede usar hasta 1 año si se congela a -18 °C.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"PFC conserva sus factores hasta por 1 año",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se requiere microhematocrito o Hb antes de cada donación.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Garantiza seguridad medular del donante según Norma Técnica 0146",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se debe monitorear la temperatura de refrigeración",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"El estándar exige registros en intervalos de 4h",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Si hay falla de energía, los bancos deben tener planes alternativos.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Las normas PAHO lo exigen .",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"¿Qué recuento mínimo de plaquetas permite aféresis?",
+-        "Alternativa 1":"100 000\/µL",
+-        "Alternativa 2":"50 000\/µL",
+-        "Alternativa 3":"200 000\/µL",
+-        "Correcta":"A",
+-        "Explicación":"Debe haber al menos 100 000\/µL para proceder",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"¿Cada cuántos días mínimo se monitorea la temperatura del stock?",
+-        "Alternativa 1":"Cada 4 hrs",
+-        "Alternativa 2":"Diariamente",
+-        "Alternativa 3":"Semanalmente",
+-        "Correcta":"A",
+-        "Explicación":"Se debe registrar la temperatura cada 4 horas",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado¿Cantidad máxima de plasma por año con aféresis?",
+-        "Pregunta":null,
+-        "Alternativa 1":"10 L",
+-        "Alternativa 2":"15 L",
+-        "Alternativa 3":"20 L",
+-        "Correcta":"B",
+-        "Explicación":"Límites anual de 15 L con intervalo de 2 semanas",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"El etiquetado incluye fecha legible y en código de barras.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Ambas formas son obligatorias por norma",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se calcula stock mínimo según consumo de 7 días.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se define inventario mínimo para 7 días",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Las bolsas caducadas deben desecharse en 24 h.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"No se pueden reutilizar",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Cajas de transporte deben preenfriarse para evitar choque térmico.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se evitan daños al producto",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se usan refrigerantes sin contacto directo con sangre.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Para evitar hemólisis",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Los bancos deben tener auditorías externas anuales.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Parte del control de calidad",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se mantiene iluminación adecuada en zonas de almacenamiento",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Asegura visibilidad y control",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"AvanzadoPersonal debe estar acreditado por Superintendencia de Salud",
+-        "Pregunta":null,
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Solo personal autorizado puede realizar el procedimiento",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"La donación altruista va a un familiar",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"La donación altruista va a al menos un tercero desconocido",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Donantes HIV+ quedan inhabilitados permanentemente.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Por seguridad transfusional",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"El banco no debe reportar retiros al Ministerio de Salud, se autoregula.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Parte de trazabilidad y seguridad",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Deben informarse campañas y estadísticas públicas.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Promueve transparencia y cultura de donación",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Etiquetado post extracción incluye fecha de extracción y vencimiento.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Datos reglamentarios requeridos",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Las mediciones de leucocitos deben documentarse.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Parte del control de calidad",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Donante con anemia leve puede donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Se exige Hb ≥13,5\/12,5 g\/dL según sexo",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se puede donar durante la menstruación",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"No está contraindicado si no hay anemia",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Diabetes no insulino-dependiente y controlada permite donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Aceptado sin complicaciones",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"Se permite viajar a zonas endémicas y donar sin espera.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debbe diferirse según país de riesgo",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"¿A qué temperatura debe mantenerse el área de procesamiento de componentes sanguíneos?",
+-        "Alternativa 1":"+15 °C a +18 °C",
+-        "Alternativa 2":"+18 °C a +22 °C",
+-        "Alternativa 3":"22 °C a +26 °C",
+-        "Correcta":"B",
+-        "Explicación":"El ambiente debe mantenerse entre +18 °C y +22 °C para proteger la calidad",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Avanzado",
+-        "Pregunta":"¿Cuál es el grupo sanguíneo más común en la población chilena?",
+-        "Alternativa 1":"A+",
+-        "Alternativa 2":"O+",
+-        "Alternativa 3":"B+",
+-        "Correcta":"B",
+-        "Explicación":"Según estudios en Chile, entre el 55 % y 60 % de la población es del grupo O (O+ o O−), siendo O+ el dominante",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué antígeno eritrocitario es el más inmunogénico del sistema Rh?",
+-        "Alternativa 1":"C",
+-        "Alternativa 2":"Diariamente",
+-        "Alternativa 3":"entre 10°C y 20°C",
+-        "Correcta":"B",
+-        "Explicación":"El antígeno D provoca respuestas inmunes más fácilmente",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Centros móviles requieren autorización sanitaria.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Todo debe estar segpun la normativa vigente",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El consentimiento informado debe incluir:",
+-        "Alternativa 1":"Destino de muestras, uso y almacenamiento",
+-        "Alternativa 2":"Solo uso",
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se debe detalllar el destino de muestras y restos",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Existe protocolo para accidentes con agujas.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Existe un protocolo para accidentes con agujas",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Las donaciones de sangre deben ser no remuneradas",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Remuneración está prohibida por ley chilena",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Las personas Rh negativo solo pueden recibir sangre Rh negativa.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Los donantes Rh− pueden transfundir a receptores Rh−, pero los Rh− no deben recibir Rh+ para evitar sensibilización .",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El 55% aprox de la población chilena es O+.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"según datos nacionales, O+ representa 55% .",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":" ¿Cuál es el porcentaje aproximado de Rh negativo en Chile?",
+-        "Alternativa 1":0.05,
+-        "Alternativa 2":0.15,
+-        "Alternativa 3":0.25,
+-        "Correcta":"A",
+-        "Explicación":"Rh– en Chile ronda el 5%",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El banco debe documentar al menos un profesional responsable en cada centro asociado.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Cada centro debe contar con profesional responsable .",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El riesgo de transfundir sangre equivocada es cercano a:",
+-        "Alternativa 1":"1 EN 1000",
+-        "Alternativa 2":"1 EN 10000",
+-        "Alternativa 3":"1 en 40000-100000",
+-        "Correcta":"C",
+-        "Explicación":"Según datos, riesgo estimado es de 1\/40‑100k",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Las etiquetas no pueden reusarse ni ser removibles.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Seguridad según estándar REG .",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Los bancos deben mantener un plan de desinfección y esterilización.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Asegura protección de pacientes y equipo .",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Es obligatorio mantener centros móviles con estándares iguales a los fijos.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Igual regulación en todos los puntos",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué porcentaje de errores de pre-transfusión ocurre en los hospitales?",
+-        "Alternativa 1":0.0005,
+-        "Alternativa 2":0.01,
+-        "Alternativa 3":0.05,
+-        "Correcta":"A",
+-        "Explicación":"Aproximadamente 1 en 2.000 muestras es un error",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué antígeno es importante además de ABO y Rh en transfusiones?",
+-        "Alternativa 1":"Kell",
+-        "Alternativa 2":"MN",
+-        "Alternativa 3":"Duffy",
+-        "Correcta":"A",
+-        "Explicación":"Kell puede causar reacciones inmunes",
+-        "Area":"Tipos de sangre y compatibilidad"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué componente no forma parte de AP‑3 (seguridad de traslado)?",
+-        "Alternativa 1":"Transporte seguro",
+-        "Alternativa 2":"Protocolos escritos",
+-        "Alternativa 3":"Publicidad",
+-        "Correcta":"C",
+-        "Explicación":"Publicidad no es parte del estándar",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué personal debe estar habilitado por la Superintendencia?",
+-        "Alternativa 1":"Solo tecnólogos médicos",
+-        "Alternativa 2":"Solo técnicos",
+-        "Alternativa 3":"Todo personal que interviene en el proceso",
+-        "Correcta":"C",
+-        "Explicación":"RH‑1.1 exige habilitación para todo tu equipo",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Puedes donar si tomaste antibióticos hace 3 días y no tienes síntomas?",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Debes esperar al menos 7 días desde el último antibiótico para proteger tu salud y la del receptor .",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Debes sentirte perfectamente bien el día de la donación?",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"No puedes donar si estás resfriado o con fiebre; debes estar en buena forma .",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Necesitas esperar 12 horas para beber alcohol antes de donar?",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"No se debe consumir alcohol al menos 12 horas antes, para evitar efectos adversos .",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Si viajaste a una zona con Zika hace 3 semanas, puedes donar hoy.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Espera al menos 4 semanas tras regreso",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Después de donar, puedes viajar durante las siguientes 24 h sin problema.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Lo ideal es evitar viajes o esfuerzos adicionales en ese primer día .",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"No hay que realizar ejercicio intenso por 12 h después de donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se recomiendan 12 h de reposo moderado",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Si estás con fiebre hoy, ¿puedes donar?",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"B",
+-        "Explicación":"Se requiere estar libre de síntomas",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El consentimiento para donar debe firmarse en cada donación.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se requiere firmar por cada donación",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Cuánto toma aproximadamente la extracción de sangre entera?",
+-        "Alternativa 1":"5-10 minutos",
+-        "Alternativa 2":"30 minutos",
+-        "Alternativa 3":"1 hora",
+-        "Correcta":"A",
+-        "Explicación":"La extracción dura entre 8 y 10 minutos",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Se aconseja evitar bebidas alcohólicas 12 horas antes y después de donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"El alcohol puede afectar la hidratación y recuperación .",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Usar tensión muscular aplicada ayuda durante la extracción.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Favorece circulación y reduce riesgos .",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Durante cuánto tiempo no deberías levantar peso tras donar?",
+-        "Alternativa 1":"2 horas",
+-        "Alternativa 2":"4-5 horas",
+-        "Alternativa 3":"24 horas",
+-        "Correcta":"B",
+-        "Explicación":"Se sugiere evitar esfuerzos ─incl. brazo punción─ por al menos 4–5 h",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Cuánto tiempo tarda el volumen sanguíneo en recuperarse?",
+-        "Alternativa 1":"1 hora",
+-        "Alternativa 2":"24 horas",
+-        "Alternativa 3":"1 semana",
+-        "Correcta":"A",
+-        "Explicación":"El plasma se repone en ~1 h",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Tras donar sangre, el refrigerio ayuda a estabilizar el azúcar en sangre.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Crucial para prevenir malestar post-donación",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":" ¿Qué evitar antes de donar?",
+-        "Alternativa 1":"Tatuajes recientes",
+-        "Alternativa 2":"Ropa cómoda",
+-        "Alternativa 3":"Dormir bien",
+-        "Correcta":"A",
+-        "Explicación":"Tatuaje reciente implica diferimiento, las otras son positivas.",
+-        "Area":"Frecuencia y cuidados"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Donación por aféresis dura hasta 2 horas.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Proceso más largo, hasta 120 min",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Compartir tu experiencia motiva a otros a donar.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"El testimonio personal es eficaz en campañas de donación",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"El riesgo de choque vasovagal tras donar es menor al 10 %.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Entre el 3 % y 10 % experimentan reacciones leves",
+-        "Area":"Mitos y realidades"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"La ventana serológica del VIH puede durar hasta 3–6 meses.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Las pruebas pueden tardar en detectar infecciones recientes",
+-        "Area":"Requisitos para donar"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Durante cuánto tiempo se conserva una bolsa de sangre antes de separar componentes?",
+-        "Alternativa 1":"2-4 horas",
+-        "Alternativa 2":"12-14 horas",
+-        "Alternativa 3":"24 horas",
+-        "Correcta":"B",
+-        "Explicación":"Debe ser fraccionada dentro de ese tiempo",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"Las pruebas serológicas de donantes son confidenciales y se informan.",
+-        "Alternativa 1":true,
+-        "Alternativa 2":false,
+-        "Alternativa 3":null,
+-        "Correcta":"A",
+-        "Explicación":"Se hueso al donante si hay infecciones positivas .",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué prueba se incluye en el examen serológico?",
+-        "Alternativa 1":"Malaria",
+-        "Alternativa 2":"Chagas",
+-        "Alternativa 3":"Gonorrea",
+-        "Correcta":"B",
+-        "Explicación":"Se analiza Chagas junto a VIH, hepatitis y sífilis",
+-        "Area":"Proceso de donación"
+-    },
+-    {
+-        "Nivel":"Experto",
+-        "Pregunta":"¿Qué fármaco teratogénico impide donar si estás en tratamiento?",
+-        "Alternativa 1":"Ibuprofeno",
+-        "Alternativa 2":"Isotretinoina",
+-        "Alternativa 3":"Amoxicilina",
+-        "Correcta":"C",
+-        "Explicación":"Isotretinoína exige aplazamiento por ser teratogénico .",
+-        "Area":"Requisitos para donar"
+-    }
+-]
+\ No newline at end of file

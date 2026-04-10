@@ -1,0 +1,49 @@
+
+<<character Narrador>>
+<<character Recepcionista>>
+
+title: Boat_Meeting
+---
+ 
+
+Narrador: Te miras en el espejo y ves tu reflejo...
+-> Elegir Avatar 1
+   <<set $player = "avatar1">>
+   <<avatarChosen>>
+   <<jump Story>>
+-> Elegir Avatar 2
+   <<set $player = "avatar2">>
+   <<avatarChosen>>
+   <<jump Story>>
+-> Elegir Avatar 3
+   <<set $player = "avatar3">>
+   <<avatarChosen>>
+   <<jump Story>>
+
+
+===
+
+
+title: Story
+---
+
+Narrador: Comienza tu proceso de donación de sangre...
+
+Narrador: Primera etapa: registro.
+Narrador: Segunda etapa: entrevista.
+Narrador: Tercera etapa: extracción.
+Narrador: Cuarta etapa: recuperación.
+
+===
+
+title: Story1
+---
+
+Narrador: Comienza tu proceso de donación de sangre...
+
+Narrador: Primera etapa: registro.
+Narrador: Segunda etapa: entrevista.
+Narrador: Tercera etapa: extracción.
+Narrador: Cuarta etapa: recuperación.
+
+===

@@ -1,0 +1,86 @@
+{
+    "puede_donar_sangre_si": [
+        {
+            "criterio": "Documento de identificación",
+            "tipo": "texto",
+            "condicion": "Debe presentar RUT, pasaporte o documento con foto.",
+            "espera_si_no_cumple": {
+                "unidad": "indefinido",
+                "cantidad": null,
+                "reintento_en": "Cuando presente un documento válido de identificación."
+            }
+        },
+        {
+            "criterio": "Edad",
+            "tipo": "numérico",
+            "condicion": "edad >= 18 y edad <= 65",
+            "espera_si_no_cumple": {
+                "unidad": "años",
+                "expresion": "18 - edad",
+                "evaluar_con": [
+                    "edad"
+                ],
+                "reintento_en": "Cuando cumpla entre 18 y 65 años."
+            }
+        },
+        {
+            "criterio": "Intervalo desde última donación",
+            "tipo": "numérico",
+            "condicion": ">= 3 meses (hombre) o >= 4 meses (mujer)",
+            "espera_si_no_cumple": {
+                "unidad": "días",
+                "cantidad": 90,
+                "reintento_en": "Cuando hayan pasado 90 días (hombre) o 120 días (mujer) desde la última donación."
+            }
+        },
+        {
+            "criterio": "Ingesta reciente de alimentos",
+            "tipo": "numérico",
+            "condicion": "última comida dentro de las últimas 5 horas",
+            "espera_si_no_cumple": {
+                "unidad": "horas",
+                "cantidad": 2,
+                "reintento_en": "Después de comer algo liviano y esperar 2 horas."
+            }
+        },
+        {
+            "criterio": "Horas de sueño",
+            "tipo": "numérico",
+            "condicion": ">= 5 horas de sueño",
+            "espera_si_no_cumple": {
+                "unidad": "horas",
+                "cantidad": 5,
+                "reintento_en": "Después de haber dormido al menos 5 horas."
+            }
+        },
+        {
+            "criterio": "Peso corporal",
+            "tipo": "numérico",
+            "condicion": "peso >= 50 kg",
+            "espera_si_no_cumple": {
+                "unidad": "meses",
+                "cantidad": 1,
+                "reintento_en": "Cuando su peso sea igual o superior a 50 kg."
+            }
+        }
+    ],
+    "consultar_antes_de_inscribirse_si": [
+        "Viajó al extranjero en los últimos 12 meses.",
+        "Está consumiendo algún medicamento.",
+        "Consumió alcohol o drogas en las últimas 12 horas.",
+        "Se realizó un procedimiento dental en los últimos 7 días.",
+        "Tiene una enfermedad crónica.",
+        "Fue operado/a en los últimos 6 meses."
+    ],
+    "no_puede_donar_sangre_si": [
+        "Tiene pareja sexual nueva y mantienen relaciones sexuales hace menos de 6 meses.",
+        "Tuvo más de una pareja sexual en los últimos 6 meses.",
+        "Tuvo relaciones sexuales con personas que ejercen el comercio sexual en los últimos 12 meses.",
+        "Tuvo diarrea en los últimos 14 días.",
+        "Se ha inyectado drogas ilegales.",
+        "Tomó antibióticos en los últimos 7 días.",
+        "Está embarazada o tuvo parto o aborto en los últimos 6 meses.",
+        "Se realizó endoscopía, colonoscopía, tatuajes, piercings, perforaciones o acupuntura en los últimos 6 meses.",
+        "Ha residido en zonas endémicas de malaria por más de 6 meses en cualquier periodo de su vida."
+    ]
+}

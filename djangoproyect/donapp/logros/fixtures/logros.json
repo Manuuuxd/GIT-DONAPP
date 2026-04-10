@@ -1,0 +1,280 @@
+[
+    {
+        "model": "logros.achievement",
+        "pk": 1,
+        "fields": {
+            "name": "Primer acceso",
+            "slug": "primer_acceso",
+            "description": "Inicia sesión por primera vez",
+            "required_count": 1,
+            "icon": "assets/logros/1.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 2,
+        "fields": {
+        "name": "Usuario activo",
+        "slug": "usuario_activo",
+        "description": "Usa la app 7 días seguidos",
+        "required_count": 7,
+        "icon": "assets/logros/2.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 3,
+        "fields": {
+        "name": "Amigo invitado",
+        "slug": "amigo_invitado",
+        "description": "Invita a un amigo a usar la app",
+        "required_count": 1,
+        "icon": "assets/logros/3.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 4,
+        "fields": {
+        "name": "Donante frecuente",
+        "slug": "donante_frecuente",
+        "description": "Registra 3 donaciones en la app",
+        "required_count": 3,
+        "icon": "assets/logros/4.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 5,
+        "fields": {
+        "name": "Héroe de la comunidad",
+        "slug": "heroe_comunidad",
+        "description": "Participa en 5 campañas de donación",
+        "required_count": 5,
+        "icon": "assets/logros/5.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 6,
+        "fields": {
+        "name": "Experto en trivia",
+        "slug": "experto_trivia",
+        "description": "Responde correctamente 10 preguntas de trivia",
+        "required_count": 10,
+        "icon": "assets/logros/6.png"
+        
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 7,
+        "fields": {
+        "name": "Perfil completo",
+        "slug": "perfil_completo",
+        "description": "Completa tu perfil de usuario al 100%",
+        "required_count": 1,
+        "icon": "assets/logros/7.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 8,
+        "fields": {
+        "name": "Conocedor de compatibilidad",
+        "slug": "conocedor_de_compatibilidad",
+        "description": "Completa el primer nivel de 'Juego de Compatibilidad'",
+        "required_count": 1,
+        "icon": "assets/logros/8.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 9,
+        "fields": {
+        "name": "Consultor de donaciones",
+        "slug": "consultor_de_donaciones",
+        "description": "Entra por primera vez a chatear con nuestro asistente virtual",
+        "required_count": 1,
+        "icon": "assets/logros/9.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 10,
+        "fields": {
+            "name": "Campeón de la elegibilidad",
+            "slug": "campeon_elegibilidad",
+            "description": "Completa 3 evaluaciones de elegibilidad",
+            "required_count": 3,
+            "icon": "assets/logros/10.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 11,
+        "fields": {
+            "name": "Donante Novato",
+            "slug": "donante_novato",
+            "description": "Alcanza el nivel 1 en tu perfil de donante",
+            "required_count": 1,
+            "icon": "assets/logros/11.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 12,
+        "fields": {
+            "name": "Aprendiz de Sangre",
+            "slug": "aprendiz_de_sangre",
+            "description": "Alcanza el nivel 2 en tu perfil de donante",
+            "required_count": 2,
+            "icon": "assets/logros/12.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 13,
+        "fields": {
+            "name": "Candidato Ideal",
+            "slug": "candidato_ideal",
+            "description": "Alcanza el nivel 3 en tu perfil de donante",
+            "required_count": 3,
+            "icon": "assets/logros/13.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 14,
+        "fields": {
+            "name": "Explorador Hemático",
+            "slug": "explorador_hematico",
+            "description": "Alcanza el nivel 4 en tu perfil de donante",
+            "required_count": 4,
+            "icon": "assets/logros/14.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 15,
+        "fields": {
+            "name": "Aliado del Banco",
+            "slug": "aliado_del_banco",
+            "description": "Alcanza el nivel 5 en tu perfil de donante",
+            "required_count": 5,
+            "icon": "assets/logros/15.png"
+        }
+    },
+    
+    {
+        "model": "logros.achievement",
+        "pk": 16,
+        "fields": {
+            "name": "Experto en Componentes",
+            "slug": "experto_en_componentes",
+            "description": "Alcanza el nivel 6 en tu perfil de donante",
+            "required_count": 6,
+            "icon": "assets/logros/16.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 17,
+        "fields": {
+            "name": "Embajador de la Vida",
+            "slug": "embajador_de_la_vida",
+            "description": "Alcanza el nivel 7 en tu perfil de donante",
+            "required_count": 7,
+            "icon": "assets/logros/17.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 18,
+        "fields": {
+            "name": "Guardián de la Sangre",
+            "slug": "guardian_de_la_sangre",
+            "description": "Alcanza el nivel 8 en tu perfil de donante",
+            "required_count": 8,
+            "icon": "assets/logros/18.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 19,
+        "fields": {
+            "name": "Mentor de Donantes",
+            "slug": "mentor_de_donantes",
+            "description": "Alcanza el nivel 9 en tu perfil de donante",
+            "required_count": 9,
+            "icon": "assets/logros/19.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 20,
+        "fields": {
+            "name": "Héroe Universal 🦸‍♂️🦸‍♀️",
+            "slug": "héroe_universal",
+            "description": "Alcanza el nivel 10 en tu perfil de donante",
+            "required_count": 10,
+            "icon": "assets/logros/20.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 21,
+        "fields": {
+            "name": "Fashonista de la Donación",
+            "slug": "fashonista_de_la_donacion",
+            "description": "Entra por primera vez a tu perfil de donante",
+            "required_count": 1,
+            "icon": "assets/logros/21.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 22,
+        "fields": {
+            "name": "Coleccionista de Logros",
+            "slug": "coleccionista_de_logros",
+            "description": "Desbloquea 10 logros en total",
+            "required_count": 10,
+            "icon": "assets/logros/22.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 23,
+        "fields": {
+            "name": "Maestro de Logros",
+            "slug": "maestro_de_logros",
+            "description": "Desbloquea todos los logros disponibles",
+            "required_count": 25,
+            "icon": "assets/logros/23.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 24,
+        "fields": {
+            "name": "Cumplir con el deber",
+            "slug": "cumplir_con_el_deber",
+            "description": "Agenda una cita para donar sangre por primera vez",
+            "required_count": 1,
+            "icon": "assets/logros/24.png"
+        }
+    },
+    {
+        "model": "logros.achievement",
+        "pk": 25,
+        "fields": {
+            "name": "Explorador de Campañas",
+            "slug": "explorador_de_campañas",
+            "description": "Ingresa a la sección de Mapa y explora las campañas cercanas",
+            "required_count": 1,
+            "icon": "assets/logros/25.png"
+        }
+    }
+
+]

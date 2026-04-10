@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "684595741464",
+    "project_id": "donapp-3c6a3",
+    "storage_bucket": "donapp-3c6a3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684595741464:android:0bf9e13bec51488a9a546d",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_AoWrYEEPqUtRbzmxDuKHHwO6KO8EEhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684595741464:android:3fcdd8acd3be6f9f9a546d",
+        "android_client_info": {
+          "package_name": "com.example.frontend.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_AoWrYEEPqUtRbzmxDuKHHwO6KO8EEhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684595741464:android:a59b35d05abbc32a9a546d",
+        "android_client_info": {
+          "package_name": "com.example.frontend.donante"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_AoWrYEEPqUtRbzmxDuKHHwO6KO8EEhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

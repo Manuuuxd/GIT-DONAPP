@@ -1,0 +1,205 @@
+[
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "quiero ver las métrricas de donaciones",
+    "answer": "Puedo mostrarte el panel de métricas, donde verás el total de donaciones, campañas activas y usuarios registrados.",
+    "action": { "type": "abrir_vista", "target": "panel_metricas" },
+    "tags": ["metricas", "estadisticas", "reporte"],
+    "synonyms": [
+      "ver estadisticas",
+      "mostrar metricas",
+      "ver reportes de donacion",
+      "ver dashboard",
+      "ver métricas",
+      "estadísticas"
+    ],
+    "regex": [
+      { "pattern": "(m[eé]tric|estad|reporte|dashboard)", "flags": "i" }
+    ]
+  },
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "muestrame el resumen de donaciones del mes",
+    "answer": "Aquí tienes el resumen de donaciones registradas este mes, incluyendo número de donantes y campañas realizadas.",
+    "action": { "type": "abrir_vista", "target": "panel_metricas" },
+    "tags": ["resumen", "donaciones", "mes"],
+    "synonyms": [
+      "resumen mensual de donaciones",
+      "donaciones de este mes",
+      "ver cifras mensuales",
+      "ver resumen mensual"
+    ],
+    "regex": [
+      { "pattern": "(resumen|mensual|este\\s*mes)", "flags": "i" }
+    ]
+  },
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "ver todas las campañas activas",
+    "answer": "Te muestro la lista de campañas de donación disponibles. Puedes filtrar por estado si lo necesitas.",
+    "action": { "type": "abrir_vista", "target": "campanias_activas" },
+    "tags": ["campañas", "listar", "ver", "activas"],
+    "synonyms": [
+      "ver campañas",
+      "listar campañas",
+      "mostrar campañas",
+      "ver campañas activas",
+      "ver la lista de campañas",
+      "lista de campañas",
+      "campanas activas",
+      "ver campanas"
+    ],
+    "regex": [
+      { "pattern": "(ver|listar|mostrar).*(campa[nñ][aá]s)", "flags": "i" }
+    ]
+  },
+
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "crear una nueva campaña de donación",
+    "answer": "Puedo abrir el formulario para crear una nueva campaña de donación, donde podrás definir nombre, fechas y centro de donación.",
+    "action": { "type": "abrir_formulario", "target": "nueva_campania" },
+    "tags": ["campañas", "donación", "crear"],
+    "synonyms": [
+      "nueva campana de donacion",
+      "crear campana",
+      "lanzar campana",
+      "hacer campana nueva",
+      "nueva campaña de donación",
+      "crear campaña",
+      "lanzar campaña",
+      "hacer campaña nueva",
+      "crear una campaña"
+    ],
+    "regex": [
+      { "pattern": "(crear|nueva|lanzar|hacer).*(campa[nñ][aá])", "flags": "i" }
+    ]
+  },
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "buscar o filtrar usuarios",
+    "answer": "Puedo mostrarte la lista de usuarios registrados y aplicar filtros como nombre, estado o tipo de donante.",
+    "action": { "type": "abrir_vista", "target": "usuarios_lista" },
+    "tags": ["usuarios", "donantes", "buscar", "filtrar"],
+    "synonyms": [
+      "buscar usuario",
+      "filtrar usuarios",
+      "ver usuarios registrados",
+      "ver donantes",
+      "mostrar lista de usuarios",
+      "buscar donante",
+      "buscar persona",
+      "ver voluntarios",
+      "filtrar por nombre",
+      "usuarios activos"
+    ],
+    "regex": [
+      { "pattern": "(usuario|donant|persona|voluntari)", "flags": "i" },
+      { "pattern": "(busca|filtra|lista|muestr|ver)", "flags": "i" }
+    ]
+  },
+
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "hola",
+    "answer": "¡Hola! 👋 Soy tu asistente de Donapp. Puedo ayudarte a crear campañas, revisar métricas o enviar mensajes a tus donantes. ¿Qué quieres hacer hoy?",
+    "action": { "type": "send_message", "target": "saludo_inicial" },
+    "tags": ["saludo", "inicio", "presentación"],
+    "synonyms": ["klk", "buenas", "hey", "hola asistente", "buenos dias", "buenas tardes", "buenas noches", "hola"],
+    "regex": [
+      { "pattern": "(hola|buenas|hey|klk)", "flags": "i" }
+    ]
+  },
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "quien eres",
+    "answer": "Soy el asistente virtual de Donapp 💬, aquí para ayudarte a gestionar tus campañas y comunicarte con tus donantes.",
+    "action": { "type": "send_message", "target": "identidad_asistente" },
+    "tags": ["presentación", "asistente", "identidad"],
+    "synonyms": ["quien me habla", "que eres", "que haces", "eres un bot", "quien eres"],
+    "regex": [
+      { "pattern": "(quien|eres|bot|asistente)", "flags": "i" }
+    ]
+  },
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "como estas",
+    "answer": "¡Todo bien, gracias por preguntar! 😄 ¿Listo para crear o revisar una campaña?",
+    "action": { "type": "send_message", "target": "respuesta_saludo" },
+    "tags": ["saludo", "interacción"],
+    "synonyms": ["como va", "como te va", "que tal", "todo bien", "cómo estás"],
+    "regex": [
+      { "pattern": "(c[oó]mo|que tal|todo bien)", "flags": "i" }
+    ]
+  },
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "adios",
+    "answer": "¡Hasta luego! 👋 No dudes en volver si necesitas ayuda con tus campañas o métricas.",
+    "action": { "type": "send_message", "target": "despedida" },
+    "tags": ["despedida"],
+    "synonyms": ["chau", "nos vemos", "hasta luego", "gracias adios", "chao"],
+    "regex": [
+      { "pattern": "(adios|chau|chao|hasta|nos vemos)", "flags": "i" }
+    ]
+  },
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "mostrar todas las funciones disponibles",
+    "answer": "Estas son mis principales funciones:\n\n💡 Crear campañas de donación\n📋 Ver y editar campañas activas\n📈 Ver métricas de desempeño\n💬 Enviar mensajes a donantes\n👥 Ver/filtrar usuarios\n\nSolo dime cuál quieres usar o escribe el nombre de la función.",
+    "action": { "type": "listar_funciones", "target": "todas" },
+    "tags": ["funciones", "ayuda", "explicación"],
+    "synonyms": ["que puedes hacer", "funciones disponibles", "que opciones tengo", "dime tus funciones", "ayuda"],
+    "regex": [
+      { "pattern": "(funcion|opcion|hacer|puedes|ayuda)", "flags": "i" }
+    ]
+  },
+
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "quiero ayuda con las funciones del asistente",
+    "answer": "Puedo explicarte en qué consiste cada función:\n\n🔹 Crear campañas: genera una nueva.\n🔹 Ver campañas: muestra tus proyectos activos.\n🔹 Ver métricas: analiza su efectividad.\n🔹 Enviar mensajes: comunica con tus donantes.\n🔹 Ver usuarios: lista o filtra perfiles.\n\n¿Sobre cuál quieres saber más?",
+    "action": { "type": "explicar_funciones", "target": "detallado" },
+    "tags": ["ayuda", "explicación", "funciones"],
+    "synonyms": ["explica funciones", "como usar el asistente", "ayuda de funciones", "dime que haces"],
+    "regex": [
+      { "pattern": "(ayuda|explic|funcion|usar)", "flags": "i" }
+    ]
+  },
+  {
+    "tenant": "B",
+    "language": "es",
+    "question": "ver encuestas disponibles",
+    "answer": "Puedo mostrarte el listado de encuestas activas y cerradas, junto con su estado, fecha de creación y número de respuestas registradas.",
+    "action": { "type": "abrir_vista", "target": "encuestas_activas" },
+    "tags": ["encuestas", "formularios", "ver encuestas", "consultas"],
+    "synonyms": [
+      "ver encuestas",
+      "mostrar encuestas",
+      "abrir encuestas",
+      "listar encuestas",
+      "consultar encuestas disponibles",
+      "quiero ver las encuestas"
+    ],
+    "regex": [
+      { "pattern": "(encuesta|formulario|consulta)", "flags": "i" }
+    ]
+  }
+]

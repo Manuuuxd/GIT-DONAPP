@@ -1,0 +1,112 @@
+<<declare $viaje as Bool>>
+<<declare $medicacion as Bool>>
+<<character Enfermera>>
+<<character Donante>>
+
+title: entrevista_medica
+---
+Narrador: Una enfermera te llama por tu nombre. Entras a una sala tranquila para responder unas preguntas médicas privadas.
+
+Enfermera: Hola, ¿cómo te sientes?
+
+-> Bien, algo nervioso, pero listo.
+   {$avatar}: Sé que es parte del proceso. Estoy aquí para ayudar.
+   <<add $confianza 1>>
+   <<sub $miedo 1>>
+
+-> ¿Esto va a doler?
+   Enfermera: Nada que no puedas manejar. Solo una pequeña aguja.
+   <<add $miedo 1>>
+   {$avatar}: Está bien... trataré de no pensar mucho en eso.
+
+Enfermera: Solo unas preguntas rápidas de rutina.
+
+Enfermera: ¿Has viajado al extranjero recientemente?
+
+-> Sí, hace poco.
+   Enfermera: Puede que necesitemos posponer tu donación según el país.
+   <<set $viaje = true>>
+
+-> No, no he salido del país.
+   Enfermera: Perfecto.
+   <<set $viaje = false>>
+   <<add $confianza 1>>
+
+Enfermera: ¿Tomas medicamentos actualmente?
+
+-> Sí, algunos.
+   Enfermera: Dependiendo del tipo, evaluaremos si puedes donar hoy.
+   <<set $medicacion = true>>
+
+-> No, ninguno.
+   Enfermera: Genial, eso facilita las cosas.
+   <<set $medicacion = false>>
+   <<add $confianza 1>>
+
+Narrador: La entrevista termina y te conducen a la sala de espera.
+<<jump zona_espera>>
+===
+
+title: zona_espera
+
+---
+Narrador: Te sientas en una sala con otros donantes. Algunos conversan, otros miran sus celulares. La atmósfera es tranquila.
+
+-> Hablar con otro donante
+   Donante: ¿Primera vez? No te preocupes, es rápido y te sentirás bien contigo mismo.
+   {$avatar}: Eso me tranquiliza. Gracias.
+   <<add $confianza 1>>
+   <<sub $miedo 1>>
+
+-> Ver videos sobre donación
+   Narrador: En la pantalla hay un testimonio de una persona que recibió sangre y sobrevivió.
+   {$avatar}: Ahora entiendo el impacto que esto puede tener.
+   <<add $confianza 1>>
+
+-> Quedarme en silencio, observando
+   Narrador: Observas los movimientos del personal. Todo se ve profesional y ordenado.
+   <<if $miedo >= 2>>
+      {$avatar}: Aún tengo algo de miedo… pero ya estoy aquí.
+   <<else>>
+      {$avatar}: Todo parece estar bajo control.
+   <<endif>>
+
+Narrador: Una enfermera se acerca.
+
+Enfermera: Ya es tu turno. Vamos a la sala de extracción.
+
+<<jump extraccion>>
+===
+title: extraccion
+---
+Narrador: La sala es clara, limpia, con varias camillas. El personal te recibe con una sonrisa.
+
+Enfermera: Vamos a colocar una aguja en tu brazo. Relájate. Puedes mirar hacia otro lado si lo prefieres.
+
+-> Estoy listo, adelante 💉
+   {$avatar}: No fue tan grave como pensé.
+   <<add $confianza 1>>
+   <<sub $miedo 1>>
+
+-> ¿Puedo escuchar música mientras tanto?
+   Enfermera: Claro, muchos lo hacen para relajarse.
+   <<add $confianza 1>>
+
+-> No estoy seguro, ¿puedo esperar un minuto?
+   Enfermera: Por supuesto. Tómate tu tiempo.
+   <<add $miedo 1>>
+   <<sub $confianza 1>>
+
+Narrador: La sangre comienza a fluir por el tubo. Un contador muestra los mililitros recolectados. La enfermera te observa atento/a todo el tiempo.
+
+<<if $confianza >= 4>>
+   {$avatar}: Me siento orgulloso. Estoy haciendo algo grande.
+<<elseif $miedo >= 3>>
+   {$avatar}: Solo quiero que esto termine... pero estoy aquí.
+<<else>>
+   {$avatar}: Curioso… no es tan malo como creí.
+<<endif>>
+Narrador: En menos de 10 minutos, todo termina. La enfermera te felicita y te acompaña a la sala de recuperación.
+
+<<jump recuperacion>>
+===

@@ -1,0 +1,37 @@
+{
+    "responsable": {
+        "nombre_organizacion": "DonApp S.A.",
+        "domicilio": "Santiago, Chile",
+        "correo_contacto": "contacto@donapp.cl"
+    },
+    "finalidades": [
+        "Gestionar su registro como usuario y donante de sangre en la aplicación.",
+        "Coordinar y facilitar las donaciones de sangre (por ejemplo, agendar citas de donación y enviarle recordatorios).",
+        "Mantener un registro de sus donaciones de sangre y su historial relacionado, cumpliendo con los requisitos sanitarios aplicables.",
+        "Proveer información y comunicaciones relevantes sobre campañas de donación de sangre, actualizaciones de la aplicación u otros avisos importantes.",
+        "Mejorar y optimizar la aplicación mediante análisis estadísticos anónimos o agregados de los datos de uso.",
+        "Ofrecer recomendaciones y contenidos personalizados, procesando los datos de forma anonimizada para garantizar su privacidad.",
+        "Cumplir con las obligaciones legales y regulatorias en materia de salud y donación de sangre."
+    ],
+    "datos_recolectados": [
+        "Datos de identificación personal: nombre completo, RUT u otro identificador oficial, fecha de nacimiento.",
+        "Datos de contacto: número de teléfono y dirección de correo electrónico (email).",
+        "Datos de salud (sensibles): tipo de sangre, historial de donaciones, respuestas a cuestionarios médicos u otra información médica relevante para determinar su elegibilidad como donante.",
+        "Datos de uso de la aplicación: información sobre cómo interactúa con la aplicación (p. ej., funcionalidades utilizadas, fechas y horas de uso) y datos de localización geográfica si usted autoriza el acceso a su ubicación."
+    ],
+    "terceros": [
+        "No vendemos ni cedemos sus datos personales a terceros con fines comerciales o publicitarios.",
+        "Sus datos podrán compartirse con instituciones de salud o bancos de sangre cuando sea necesario para gestionar o concretar su donación de sangre, contando siempre con su consentimiento previo.",
+        "Podemos divulgar sus datos personales a autoridades sanitarias u organismos gubernamentales cuando alguna ley o regulación vigente nos obligue a hacerlo (por ejemplo, para fines de vigilancia de la salud pública).",
+        "Utilizamos proveedores de servicios tecnológicos (como servicios de alojamiento de datos o envío de notificaciones) que pueden tener acceso a sus datos personales únicamente para prestar esos servicios en nombre de DonApp, bajo estrictas obligaciones de confidencialidad y seguridad."
+    ],
+    "derechos_usuarios": [
+        "Acceso: puede solicitar información sobre los datos personales suyos que tratamos, incluyendo las categorías de datos, su origen, los destinatarios con quienes se comparten y el propósito de su almacenamiento.",
+        "Rectificación: tiene derecho a solicitar la corrección o actualización de sus datos personales si son inexactos, incompletos o están desactualizados.",
+        "Cancelación: puede pedir la eliminación de sus datos personales de nuestros registros cuando lo estime conveniente, por ejemplo si considera que ya no son necesarios para las finalidades informadas (salvo en casos donde exista obligación legal de conservarlos).",
+        "Oposición: puede oponerse al tratamiento de sus datos personales en determinadas situaciones – por ejemplo, puede solicitar dejar de recibir comunicaciones informativas, o que no sigamos tratando sus datos si los proporcionó voluntariamente y ya no desea utilizar la aplicación.",
+        "Estos derechos (conocidos como derechos ARCO) pueden ser ejercidos en cualquier momento. Para ello, puede contactarnos a través del correo electrónico indicado en este aviso, especificando la solicitud que desea realizar."
+    ],
+    "almacenamiento_seguridad": "Sus datos personales se almacenan de forma segura y confidencial. DonApp implementa medidas técnicas y organizativas apropiadas para proteger la información contra accesos no autorizados, pérdida o uso indebido. Por ejemplo, usamos transmisión cifrada para datos sensibles y restringimos el acceso a la información únicamente al personal autorizado. Conservaremos sus datos únicamente durante el tiempo necesario para cumplir las finalidades descritas y de acuerdo con la normativa vigente; después serán eliminados o anonimizados de conformidad con la ley.",
+    "consentimiento": "Al registrarse y utilizar DonApp, usted proporciona su consentimiento libre, expreso e informado para el tratamiento de sus datos personales (incluidos datos sensibles de salud) conforme a lo descrito en este aviso. Este consentimiento es voluntario pero necesario para usar las funcionalidades de la aplicación. Si decide no otorgarlo o revocarlo posteriormente, no podremos prestarle los servicios vinculados a DonApp. Usted puede retirar su consentimiento en cualquier momento, comunicándolo a través de los canales de contacto indicados; dicha revocación aplicará hacia el futuro, sin efecto retroactivo."
+}

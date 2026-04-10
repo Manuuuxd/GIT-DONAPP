@@ -1,0 +1,117 @@
+
+
+title: recuperacion
+---
+Narrador: Te recuestas en una silla cómoda. La enfermera te ofrece jugo y galletas.
+
+Enfermera: ¿Cómo te sientes?
+
+-> Muy bien, fue más fácil de lo que pensaba
+   {$avatar}: Esto me da confianza para hacerlo de nuevo.
+   <<add $confianza 1>>
+
+-> Un poco mareado, pero orgulloso
+   {$avatar}: Mi cuerpo se queja un poco, pero mi corazón está contento.
+   <<add $miedo 1>>
+   <<add $confianza 1>>
+
+-> No estoy seguro, solo quiero irme
+   {$avatar}: Tal vez esto no era para mí…
+   <<add $miedo 1>>
+   <<sub $confianza 1>>
+
+Narrador: Pasan unos minutos. Sientes cómo tu cuerpo se recupera. Miras alrededor. Todos parecen tranquilos. Has completado tu primera simulación.
+
+<<jump epilogo>>
+===
+
+title: epilogo
+---
+Narrador: 🎉 ¡Simulación completada! Ahora, el resultado de tu experiencia se resume en un mensaje final.
+
+<<if $confianza >= 5 and $miedo < 3>>
+   <<jump final_motivador>>
+<<elseif $confianza >= 3 and $miedo >= 3>>
+   <<jump final_reflexivo>>
+<<else>>
+   <<jump final_neutral>>
+<<endif>>
+
+===
+
+title: final_motivador
+
+---
+Narrador:
+"💬 Lo lograste. Venciste tus miedos y diste un paso generoso y valiente.
+Has demostrado que donar salva vidas — ¡y tú podrías haber salvado tres hoy!
+Sigue así. Personas como tú hacen del mundo un lugar mejor."
+
+<<jump opciones_finales>>
+
+===
+title: final_reflexivo
+---
+Narrador:
+"💬 Fue un camino con dudas, pero llegaste al final.
+Cada decisión cuenta. Tal vez no fue perfecto, pero fue auténtico.
+La próxima vez, sabrás mejor qué esperar. Y eso también es avanzar."
+
+<<jump opciones_finales>>
+===
+
+title: final_neutral
+
+---
+Narrador:
+"💬 No todas las experiencias son iguales, y eso está bien.
+Hoy aprendiste algo nuevo. Y quizá eso sea lo más valioso.
+Recuerda\: donar es voluntario, pero su impacto es real."
+
+<<jump opciones_finales>>
+
+===
+
+title: opciones_finales
+
+---
+Narrador: ¿Qué quieres hacer ahora?
+
+-> 📅 Agendar una donación real
+   <<goto_module>>
+
+-> 🖼️ Ver resumen de decisiones
+   <<jump resumen_simulador>>
+
+-> 🔁 Repetir simulador con otro avatar
+   <<jump inicio>>
+===
+title: resumen_simulador
+
+---
+Narrador: Aquí tienes un resumen de tu simulación:
+
+- Avatar elegido: {$avatar}
+- Nivel de confianza: {$confianza}
+- Nivel de miedo: {$miedo}
+- ¿Viajó al extranjero?\:
+<<if $viaje == true>>
+    Sí
+<<else>>
+    No
+<<endif>>
+- ¿Usa medicamentos?\:
+<<if $medicacion == true>>
+    Sí
+<<else>>
+    No
+<<endif>>
+
+Narrador: Puedes guardar esta imagen como un recuerdo o compartirlo con alguien que también quiera vivir la experiencia.
+
+-> 💾 Guardar como imagen
+   <<export_image>>
+
+-> 🔙 Volver al inicio
+   <<jump inicio>>
+===

@@ -1,0 +1,40 @@
+from django.urls import path
+from rest_framework.authtoken.views import obtain_auth_token
+from .views import (RegisterUserAPI,
+                    UserDetailAPI,
+                    UserProfileUpdateAPI,
+                    UserNivelAPI,
+                    enviar_recordatorio_test,
+                    UsuarioListView, 
+                    RequestPasswordResetView,
+                    ResetPasswordView,
+                    ActualizarOnesignalView,
+                    UserProfileChoicesAPI,
+                    UserExperienciaAPI,
+                    SendFriendRequestAPI,
+                    PendingFriendRequestsAPI,
+                    RespondFriendRequestAPI,
+                    FriendsListAPI,
+                    UserAvatarView
+                    )
+
+urlpatterns = [
+    path('register/', RegisterUserAPI.as_view(), name='register'),
+    path('login/', obtain_auth_token, name='login'),
+    path('me/', UserDetailAPI.as_view(), name='user-detail'),
+    path('me/profile/', UserProfileUpdateAPI.as_view(), name='profile-update'),
+    path('me/nivel/', UserNivelAPI.as_view(), name='nivel'),
+    path('test-correo/', enviar_recordatorio_test, name='test-correo'),
+    path('filtrar_usuarios/', UsuarioListView.as_view(), name='filtrar_usuarios'),
+    path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
+    path('actualizar_onesignal/', ActualizarOnesignalView.as_view(), name='update-onesignal-id'),
+    path('request-reset/', RequestPasswordResetView.as_view(), name='request_reset'),
+    path('reset-password/<str:token>/', ResetPasswordView.as_view(), name='reset_password'),
+    path('profile/choices/', UserProfileChoicesAPI.as_view(), name='profile-choices'),
+    path("experiencia/", UserExperienciaAPI.as_view(), name="user-experiencia"),
+    path('friends/send/', SendFriendRequestAPI.as_view(), name='send-friend-request'),
+    path('friends/pending/', PendingFriendRequestsAPI.as_view(), name='pending-friend-requests'),
+    path('friends/respond/<int:pk>/', RespondFriendRequestAPI.as_view(), name='respond-friend-request'),
+    path('friends/', FriendsListAPI.as_view(), name='friends-list'),
+    path('avatar/', UserAvatarView.as_view(), name="user-avatar"),
+]

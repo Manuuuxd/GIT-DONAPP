@@ -1,0 +1,625 @@
+[
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "cuales son los requisitos para donar sangre",
+    "answer": "Para donar sangre en Chile debes tener entre 18 y 65 años, pesar más de 50 kg, haber dormido al menos 5 horas, estar en buen estado de salud y presentar tu cédula o pasaporte. No debes estar embarazada, ni haber donado en los últimos 3 meses (hombres) o 4 meses (mujeres).",
+    "tags": ["requisitos", "donación", "sangre"],
+    "synonyms": ["qué necesito para donar sangre", "requisitos donación de sangre", "quién puede donar sangre"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "cada cuanto tiempo puedo donar sangre",
+    "answer": "Los hombres pueden donar sangre cada 3 meses y las mujeres cada 4 meses, siempre que no existan contraindicaciones médicas.",
+    "tags": ["frecuencia", "donación", "tiempo"],
+    "synonyms": ["cada cuánto puedo donar", "tiempo entre donaciones", "frecuencia de donación"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo un tatuaje o piercing",
+    "answer": "Sí, pero deben haber pasado al menos 6 meses desde que te hiciste el tatuaje, piercing o acupuntura, para reducir el riesgo de infecciones.",
+    "tags": ["tatuajes", "piercing", "restricciones"],
+    "synonyms": ["tengo tatuaje puedo donar", "piercing y donación de sangre", "donar con tatuaje reciente"],
+    "regex": [{"pattern": "(tatuaje|piercing)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "que debo hacer antes de donar sangre",
+    "answer": "Duerme bien (al menos 5 horas), come algo liviano y evita grasas o alcohol 12 horas antes. También es importante llevar tu cédula o pasaporte.",
+    "tags": ["preparación", "antes de donar"],
+    "synonyms": ["qué hacer antes de donar", "preparativos donación de sangre"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "que sucede despues de donar sangre",
+    "answer": "Después de donar, descansa unos minutos, toma líquidos y evita esfuerzos físicos por el resto del día. Tu cuerpo recuperará el volumen de sangre en pocas horas.",
+    "tags": ["postdonación", "cuidados", "después"],
+    "synonyms": ["qué hacer después de donar", "cuidados post donación", "cómo me sentiré después"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si estoy resfriado o tengo fiebre",
+    "answer": "No. Debes esperar al menos 7 días después de recuperarte completamente de un resfrío, fiebre o cualquier infección antes de donar sangre.",
+    "tags": ["enfermedades", "restricciones"],
+    "synonyms": ["puedo donar si estoy resfriado", "donar con fiebre", "estoy enfermo puedo donar"],
+    "regex": [{"pattern": "(resfri|fiebre|enfermo)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "se puede donar sangre estando embarazada",
+    "answer": "No. Las mujeres embarazadas no pueden donar sangre ni durante el embarazo ni en los 6 meses posteriores al parto.",
+    "tags": ["embarazo", "restricciones"],
+    "synonyms": ["embarazada puede donar", "puedo donar si estoy embarazada"],
+    "regex": [{"pattern": "(embarazad)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "la donación de sangre duele",
+    "answer": "Solo sentirás un leve pinchazo al insertar la aguja. El procedimiento es rápido y seguro, realizado por personal capacitado.",
+    "tags": ["procedimiento", "seguridad"],
+    "synonyms": ["duele donar sangre", "es doloroso donar", "que tanto duele donar sangre"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "es seguro donar sangre",
+    "answer": "Sí. Todo el material utilizado es estéril y desechable, por lo que no existe riesgo de contraer enfermedades durante la donación.",
+    "tags": ["seguridad", "procedimiento"],
+    "synonyms": ["es peligroso donar", "puedo contagiarme al donar", "seguridad en la donación"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tomo medicamentos",
+    "answer": "Depende del medicamento. Algunos tratamientos requieren postergar la donación. Informa siempre al personal médico qué medicamentos estás tomando antes de donar.",
+    "tags": ["medicamentos", "restricciones"],
+    "synonyms": ["donar tomando remedios", "puedo donar si tomo pastillas", "donar con tratamiento"],
+    "regex": [{"pattern": "(medicamento|remedio|tratamiento)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si he tenido relaciones sexuales recientes",
+    "answer": "Sí, puedes donar, pero si has tenido una nueva pareja sexual o múltiples parejas en los últimos 6 meses, se recomienda esperar ese tiempo por razones de seguridad transfusional.",
+    "tags": ["relaciones", "pareja", "restricciones"],
+    "synonyms": ["relaciones recientes puedo donar", "sexo y donación de sangre", "pareja nueva puedo donar"],
+    "regex": [{"pattern": "(relacion|sexual|pareja)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tuve una cirugía reciente",
+    "answer": "Depende del tipo de cirugía. En procedimientos menores se debe esperar al menos 1 mes. En cirugías mayores o con hospitalización, espera 6 meses antes de donar.",
+    "tags": ["cirugía", "operación", "restricciones"],
+    "synonyms": ["operado puedo donar", "donar después de cirugía", "operación reciente puedo donar"],
+    "regex": [{"pattern": "(cirug|operaci)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si viajé fuera del país",
+    "answer": "Si viajaste a zonas donde hay malaria, fiebre amarilla u otras enfermedades tropicales, debes esperar 6 meses antes de donar. Si el viaje fue dentro de Chile o a países sin riesgo, puedes donar sin problema.",
+    "tags": ["viajes", "restricciones", "salud"],
+    "synonyms": ["viaje reciente puedo donar", "viajar y donar sangre", "donar después de viajar"],
+    "regex": [{"pattern": "(viaj|malaria|amarilla)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si fumo o tomo alcohol",
+    "answer": "Fumar no impide donar, pero se recomienda no hacerlo 2 horas antes ni después de la donación. No debes consumir alcohol 12 horas antes de donar.",
+    "tags": ["fumar", "alcohol", "hábitos"],
+    "synonyms": ["donar si fumo", "donar después de beber", "fumar antes de donar", "si bebo antes de donar", "donar si tomo alcohol","donar si tomo una cerveza"],
+    "regex": [{"pattern": "(fumar|alcohol|beber)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo piercings o me hice acupuntura",
+    "answer": "Sí, pero debes esperar al menos 6 meses desde el procedimiento, ya que existe riesgo de infección si las agujas no fueron estériles.",
+    "tags": ["piercing", "acupuntura", "restricciones"],
+    "synonyms": ["donar con piercing", "acupuntura reciente puedo donar"],
+    "regex": [{"pattern": "(piercing|acupuntur)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "hola",
+    "answer": "¡Hola! 👋 Soy el Chatbot Donapp. ¡Puedo ayudarte a resolver tus dudas!",
+    "tags": ["saludo", "inicio", "presentación"],
+    "synonyms": ["hola", "klk", "buenas", "hey", "hola asistente", "buenos días", "buenas tardes", "buenas noches"],
+    "regex": []
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "quien eres",
+    "answer": "Soy el Chatbot Donapp 💬, aquí para ayudarte.",
+    "tags": ["presentación", "asistente", "identidad"],
+    "synonyms": ["quien me habla", "que eres", "que haces", "eres un bot"],
+    "regex": [{"pattern": "(quien|eres|bot|asistente)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "como estas",
+    "answer": "¡Todo bien, gracias por preguntar! 😄 ¿Listo para hacer preguntas?",
+    "tags": ["saludo", "interacción"],
+    "synonyms": ["cómo va", "cómo te va", "qué tal", "todo bien"],
+    "regex": [{"pattern": "(como|qué tal|todo bien)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "adios",
+    "answer": "¡Hasta luego! 👋 No dudes en volver si necesitas ayuda.",
+    "tags": ["despedida"],
+    "synonyms": ["chau", "nos vemos", "hasta luego", "gracias adiós"],
+    "regex": [{"pattern": "(adios|chau|hasta|nos vemos)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tomé paracetamol",
+    "answer": "Sí, puedes donar sangre si solo tomaste paracetamol (acetaminofén) para aliviar dolor o fiebre leve, siempre que te sientas bien y no tengas síntomas de enfermedad. Sin embargo, si lo tomaste por fiebre, espera al menos 7 días después de recuperarte.",
+    "tags": ["medicamentos", "paracetamol", "donación"],
+    "synonyms": ["donar después de tomar paracetamol", "puedo donar si tomé paracetamol ayer", "donar tomando acetaminofén"],
+    "regex": [{"pattern": "(paracetamol|acetaminof)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tomé ibuprofeno",
+    "answer": "Si tomaste ibuprofeno de forma puntual (por ejemplo, para un dolor leve), puedes donar después de 24 horas. Si lo estás usando de forma prolongada o bajo tratamiento médico, consulta antes con el personal de salud.",
+    "tags": ["medicamentos", "ibuprofeno", "donación"],
+    "synonyms": ["donar tomando ibuprofeno", "puedo donar si tomé ibuprofeno", "donar después de tomar ibuprofeno"],
+    "regex": [{"pattern": "(ibuprofeno)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo alergias",
+    "answer": "Sí, puedes donar si tienes alergias leves y estás bien el día de la donación. Si estás tomando antihistamínicos o presentas síntomas intensos (como fiebre o dificultad para respirar), espera a recuperarte.",
+    "tags": ["alergias", "restricciones"],
+    "synonyms": ["alérgico puedo donar", "donar con alergia", "tengo alergia puedo donar"],
+    "regex": [{"pattern": "(alerg)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si estoy tomando antibióticos",
+    "answer": "No puedes donar mientras estás en tratamiento con antibióticos. Debes esperar al menos 7 días después de terminar el tratamiento y sentirte completamente recuperado.",
+    "tags": ["medicamentos", "antibióticos", "restricciones"],
+    "synonyms": ["donar tomando antibióticos", "puedo donar si tomo antibióticos", "donar si estoy con antibióticos"],
+    "regex": [{"pattern": "(antibi)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo presión alta controlada",
+    "answer": "Sí, si tu presión está controlada con medicamentos y te sientes bien, puedes donar sangre. Informa siempre al personal médico sobre los medicamentos que usas.",
+    "tags": ["presión", "hipertensión", "medicamentos"],
+    "synonyms": ["hipertenso puedo donar", "tomo pastillas para la presión puedo donar", "donar con presión alta"],
+    "regex": [{"pattern": "(presión|hiperten)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo un resfrío leve",
+    "answer": "No. Aunque sea leve, no se recomienda donar si estás resfriado. Espera al menos 7 días después de recuperarte completamente antes de donar.",
+    "tags": ["resfrío", "salud", "restricciones"],
+    "synonyms": ["estoy resfriado puedo donar", "donar con gripe", "tengo mocos puedo donar"],
+    "regex": [{"pattern": "(resfri|gripe|moco)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo diabetes",
+    "answer": "Depende. Si tu diabetes está bien controlada con dieta o medicamentos orales, puedes donar. Si usas insulina o tienes complicaciones, no se recomienda.",
+    "tags": ["diabetes", "salud", "restricciones"],
+    "synonyms": ["soy diabético puedo donar", "tengo diabetes puedo donar", "diabético donar sangre"],
+    "regex": [{"pattern": "(diabet)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo colesterol alto",
+    "answer": "Sí, puedes donar si tu colesterol está controlado y no tienes otros problemas de salud. Los medicamentos para el colesterol no impiden donar.",
+    "tags": ["colesterol", "medicamentos", "salud"],
+    "synonyms": ["colesterol alto puedo donar", "donar con dislipidemia", "tomo pastillas para el colesterol puedo donar"],
+    "regex": [{"pattern": "(colesterol|dislipid)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tomé alcohol anoche",
+    "answer": "No se recomienda. Debes esperar al menos 12 horas después de consumir alcohol antes de donar sangre.",
+    "tags": ["alcohol", "hábitos", "restricciones"],
+    "synonyms": ["donar si bebí anoche", "tomé una cerveza puedo donar", "donar después de carretear"],
+    "regex": [{"pattern": "(alcohol|bebí|carretear|cerveza)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "cuanto dura el proceso de donación",
+    "answer": "El proceso completo dura entre 30 y 45 minutos, incluyendo la entrevista, revisión médica y la extracción de sangre (que dura unos 10 minutos).",
+    "tags": ["tiempo", "proceso", "donación"],
+    "synonyms": ["cuánto se demora donar", "duración de la donación", "cuánto tarda donar sangre"],
+    "regex": [{"pattern": "(cuánto|dura|demora|tarda)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "donde puedo donar sangre en chile",
+    "answer": "Puedes donar en hospitales públicos, clínicas o en las campañas móviles del Centro Metropolitano de Sangre. En Santiago, por ejemplo, puedes ir al Hospital del Salvador o al Centro de Sangre ubicado en Providencia.",
+    "tags": ["lugares", "centros", "donación"],
+    "synonyms": ["dónde donar sangre", "lugares para donar", "centro de donación en chile"],
+    "regex": [{"pattern": "(dónde|lugar|centro|hospital|campaña)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "me pagan por donar sangre",
+    "answer": "No. En Chile la donación de sangre es voluntaria y altruista. No se paga, pero se agradece con colación y reconocimiento por tu aporte.",
+    "tags": ["pago", "altruismo", "donación"],
+    "synonyms": ["pagan por donar", "cuánto pagan por donar sangre", "donar sangre por dinero"],
+    "regex": [{"pattern": "(pagan|pago|dinero)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "que hago si me siento mal después de donar",
+    "answer": "Si te sientes mareado o débil, siéntate o recuéstate, toma líquidos y evita esfuerzos. Si los síntomas no pasan en unas horas, contacta al centro de donación.",
+    "tags": ["postdonación", "malestar", "cuidados"],
+    "synonyms": ["me mareé después de donar", "me siento mal tras donar", "qué hacer si me baja la presión"],
+    "regex": [{"pattern": "(mare|mal|presión|débil)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tuve covid",
+    "answer": "Sí, puedes donar 14 días después de recuperarte completamente del COVID-19 y no tener síntomas. Si fuiste vacunado, puedes donar después de 7 días.",
+    "tags": ["covid", "vacuna", "restricciones"],
+    "synonyms": ["tuve covid puedo donar", "donar después del covid", "donar si me vacuné"],
+    "regex": [{"pattern": "(covid|vacun|corona)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si estoy menstruando",
+    "answer": "Sí, puedes donar durante tu periodo si te sientes bien y no estás débil. Si tienes molestias fuertes o sangrado abundante, es mejor esperar a sentirte mejor.",
+    "tags": ["menstruación", "mujeres", "restricciones"],
+    "synonyms": ["puedo donar con la regla", "donar menstruando", "donar con el periodo"],
+    "regex": [{"pattern": "(menstru|regla|periodo)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "gracias",
+    "answer": "¡De nada! 😊 Me alegra ayudarte. ¿Quieres saber algo más sobre donaciones?",
+    "tags": ["agradecimiento"],
+    "synonyms": ["gracias bot", "vale gracias", "muchas gracias", "te agradezco"],
+    "regex": [{"pattern": "(gracia)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "no entiendo",
+    "answer": "No hay problema 😅. ¿Podrías repetir tu pregunta o explicarla de otra forma?",
+    "tags": ["confusión", "interacción"],
+    "synonyms": ["no se", "no me queda claro", "qué dices", "no comprendo"],
+    "regex": [{"pattern": "(no entiendo|no se|no comprendo)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "estas ahi",
+    "answer": "¡Sí! 👋 Aquí estoy. Puedes preguntarme lo que quieras sobre donaciones de sangre.",
+    "tags": ["interacción", "presencia"],
+    "synonyms": ["sigues ahi", "estás ahí", "hola estás", "me escuchas"],
+    "regex": [{"pattern": "(ahi|estás|sigues|escuchas)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "cuentame sobre donar sangre",
+    "answer": "Donar sangre es un acto voluntario y solidario 💉. Cada donación puede salvar hasta 3 vidas. En Chile puedes hacerlo desde los 18 hasta los 65 años, y el proceso es rápido y seguro.",
+    "tags": ["información general", "educación"],
+    "synonyms": ["qué es donar sangre", "por qué donar sangre", "beneficios de donar"],
+    "regex": [{"pattern": "(qué es|por qué|beneficio|cuéntame)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si carretié anoche",
+    "answer": "Si consumiste alcohol, debes esperar al menos 12 horas antes de donar sangre. Si solo trasnochaste pero te sientes bien, puedes donar.",
+    "tags": ["alcohol", "hábitos", "coloq"],
+    "synonyms": ["carretié", "salí anoche", "tomé anoche"],
+    "regex": [{"pattern": "(carretear|carreti|tomé|salí)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si estoy medio resfriado",
+    "answer": "No es recomendable. Espera al menos 7 días después de recuperarte de los síntomas del resfrío.",
+    "tags": ["resfrío", "salud"],
+    "synonyms": ["tengo mocos", "toso un poco", "me duele la garganta"],
+    "regex": [{"pattern": "(resfri|moco|tos|garganta)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué tipos de sangre existen",
+    "answer": "Existen los tipos de sangre A, B, AB y O, cada uno con factor Rh positivo o negativo. Estos determinan compatibilidades para transfusiones.",
+    "tags": ["tipos de sangre", "información general"],
+    "synonyms": ["clases de sangre", "qué grupo sanguíneo hay", "tipos de sangre y Rh"],
+    "regex": [{"pattern": "(tipo|grupo|sangre)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué sucede si me desmayo al donar",
+    "answer": "Si te desmayas, el personal te ayudará a recostarte y a recuperarte con líquidos. Es un evento poco común y generalmente leve.",
+    "tags": ["seguridad", "procedimiento", "malestar"],
+    "synonyms": ["me desmayo al donar", "mareo durante donación", "siento que voy a desmayarme"],
+    "regex": [{"pattern": "(desmay|mareo)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué cantidad de sangre se dona",
+    "answer": "Se dona aproximadamente 450 ml, que es cerca del 10% del volumen sanguíneo total de una persona adulta sana.",
+    "tags": ["procedimiento", "cantidad", "información general"],
+    "synonyms": ["cuánta sangre se extrae", "volumen de donación", "cantidad que se dona"],
+    "regex": [{"pattern": "(cantidad|volumen|cuánto)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si tengo anemia leve",
+    "answer": "No se recomienda donar si tienes anemia. Tu nivel de hemoglobina debe estar dentro de los rangos aceptables para asegurar tu salud.",
+    "tags": ["anemia", "salud", "restricciones"],
+    "synonyms": ["donar con anemia", "hemoglobina baja puedo donar", "tengo anemia puedo donar"],
+    "regex": [{"pattern": "(anemia|hemoglobina)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué análisis se hacen antes de donar",
+    "answer": "Antes de donar se realiza un examen de hemoglobina, revisión de historial médico y control de signos vitales para asegurar que puedas donar de manera segura.",
+    "tags": ["procedimiento", "análisis", "seguridad"],
+    "synonyms": ["exámenes previos a donar", "pruebas antes de donar", "controles antes de la donación"],
+    "regex": [{"pattern": "(análisis|examen|prueba)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué alimentos debo evitar antes de donar",
+    "answer": "Evita comidas muy grasas, alcohol y exceso de cafeína 12 horas antes. Es recomendable comer algo liviano y saludable.",
+    "tags": ["alimentación", "preparación"],
+    "synonyms": ["qué no comer antes de donar", "alimentos prohibidos antes de donar", "restricciones alimenticias donación"],
+    "regex": [{"pattern": "(comida|alimento|beber|evitar)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo hepatitis",
+    "answer": "No puedes donar si tienes hepatitis activa o antecedentes recientes, ya que esto puede afectar tu salud y la seguridad de la sangre.",
+    "tags": ["enfermedades", "restricciones"],
+    "synonyms": ["donar con hepatitis", "hepatitis y donación", "tengo hepatitis puedo donar"],
+    "regex": [{"pattern": "(hepatitis)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué pasa si tengo fiebre el día de la donación",
+    "answer": "No debes donar si tienes fiebre. Debes esperar hasta estar completamente recuperado para garantizar tu seguridad y la de los receptores.",
+    "tags": ["salud", "restricciones", "enfermedades"],
+    "synonyms": ["donar con fiebre", "tengo fiebre puedo donar", "si estoy enfermo puedo donar"],
+    "regex": [{"pattern": "(fiebre|enfermo)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si soy vegetariano o vegano",
+    "answer": "Sí, puedes donar, pero es importante que tu dieta te permita mantener niveles adecuados de hierro y hemoglobina.",
+    "tags": ["dieta", "salud", "restricciones"],
+    "synonyms": ["donar siendo vegetariano", "donar siendo vegano", "restricciones por dieta"],
+    "regex": [{"pattern": "(vegetariano|vegano|dieta)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "qué pasa con la sangre donada",
+    "answer": "La sangre se analiza, clasifica por tipo y factor Rh, y se almacena en bancos de sangre para transfusiones a pacientes que la necesiten.",
+    "tags": ["proceso", "información general", "procedimiento"],
+    "synonyms": ["qué hacen con la sangre", "uso de la sangre donada", "dónde va la sangre"],
+    "regex": [{"pattern": "(qué pasa|uso|destino)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo enfermedad cardíaca",
+    "answer": "Depende de tu condición y control médico. Algunas enfermedades cardíacas pueden impedir la donación por seguridad.",
+    "tags": ["salud", "restricciones", "corazón"],
+    "synonyms": ["donar con problemas del corazón", "enfermedad cardíaca puedo donar", "donar si tengo corazón débil"],
+    "regex": [{"pattern": "(cardíaca|corazón)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si estoy tomando anticonceptivos",
+    "answer": "Sí, puedes donar si estás tomando anticonceptivos orales o inyectables, ya que no afectan la seguridad de la donación.",
+    "tags": ["medicamentos", "restricciones", "mujeres"],
+    "synonyms": ["donar tomando pastillas anticonceptivas", "anticonceptivos y donación", "píldora y donar"],
+    "regex": [{"pattern": "(anticonceptivo|píldora)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo depresión",
+    "answer": "Sí, siempre que tu salud mental esté estable y los medicamentos que uses no contraindiquen la donación. Consulta con el personal médico.",
+    "tags": ["salud mental", "restricciones"],
+    "synonyms": ["donar con depresión", "padezco depresión puedo donar", "medicación por depresión y donación"],
+    "regex": [{"pattern": "(depresión|medicación)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo asma",
+    "answer": "Sí, puedes donar si tu asma está controlada y no estás teniendo crisis. Informa al personal sobre tu condición y medicamentos.",
+    "tags": ["salud", "restricciones", "asma"],
+    "synonyms": ["donar con asma", "tengo asma puedo donar", "asma y donación"],
+    "regex": [{"pattern": "(asma)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo colesterol bajo",
+    "answer": "Sí, puedes donar siempre que tu nivel de colesterol no afecte tu salud general. El personal médico evaluará tu estado antes de donar.",
+    "tags": ["salud", "colesterol", "restricciones"],
+    "synonyms": ["donar con colesterol bajo", "nivel de colesterol y donación", "hipocolesterolemia y donar"],
+    "regex": [{"pattern": "(colesterol|hipocolester)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si estoy tomando vitaminas",
+    "answer": "Sí, tomar vitaminas no impide la donación de sangre, siempre que te sientas bien y tu estado de salud sea adecuado.",
+    "tags": ["medicamentos", "salud", "restricciones"],
+    "synonyms": ["donar tomando suplementos", "vitaminas y donación", "puedo donar con vitaminas"],
+    "regex": [{"pattern": "(vitamina|suplemento)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo gripe leve",
+    "answer": "No. Incluso una gripe leve puede afectar tu salud y la seguridad de la sangre. Espera al menos 7 días después de recuperarte.",
+    "tags": ["salud", "enfermedades", "restricciones"],
+    "synonyms": ["donar con gripe", "estoy resfriado puedo donar", "gripita puedo donar"],
+    "regex": [{"pattern": "(gripe|resfriado|tos)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar si estoy lactando",
+    "answer": "Sí, puedes donar sangre mientras estás lactando, siempre que te sientas bien y tu nutrición sea adecuada.",
+    "tags": ["mujeres", "lactancia", "restricciones"],
+    "synonyms": ["donar mientras lacto", "lactancia y donación", "puedo donar amamantando"],
+    "regex": [{"pattern": "(lact|amamantar)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo VIH",
+    "answer": "No. Las personas con VIH no pueden donar sangre por seguridad de los receptores.",
+    "tags": ["enfermedades", "restricciones", "salud"],
+    "synonyms": ["donar con VIH", "tengo VIH puedo donar", "VIH y donación de sangre"],
+    "regex": [{"pattern": "(VIH|HIV)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo herpes",
+    "answer": "Depende de la etapa de la infección. Si hay lesiones activas, no se recomienda donar. Consulta con el personal médico antes de donar.",
+    "tags": ["enfermedades", "restricciones", "salud"],
+    "synonyms": ["donar con herpes", "herpes y donación", "tengo herpes puedo donar"],
+    "regex": [{"pattern": "(herpes)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo enfermedad renal",
+    "answer": "Si tienes enfermedad renal crónica o insuficiencia, no se recomienda donar sangre. Consulta siempre con tu médico antes.",
+    "tags": ["salud", "enfermedades", "restricciones"],
+    "synonyms": ["donar con riñones dañados", "enfermedad renal puedo donar", "donación enfermedad renal"],
+    "regex": [{"pattern": "(renal|riñon)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo epilepsia",
+    "answer": "Depende de tu control de crisis. Si tus episodios están controlados y tu médico lo autoriza, podrías donar sangre.",
+    "tags": ["salud", "enfermedades", "restricciones"],
+    "synonyms": ["donar con epilepsia", "epilepsia y donación", "convulsiones puedo donar"],
+    "regex": [{"pattern": "(epilepsia|convulsión)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo lupus",
+    "answer": "No se recomienda donar si tienes lupus activo, ya que puede afectar tu salud y la seguridad de la sangre.",
+    "tags": ["enfermedades autoinmunes", "restricciones"],
+    "synonyms": ["donar con lupus", "tengo lupus puedo donar", "lupus y donación"],
+    "regex": [{"pattern": "(lupus)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo tuberculosis",
+    "answer": "No puedes donar mientras tengas tuberculosis activa o estés en tratamiento. Espera hasta la completa recuperación y autorización médica.",
+    "tags": ["enfermedades", "restricciones", "salud"],
+    "synonyms": ["donar con tuberculosis", "tuberculosis y donación", "TB puedo donar"],
+    "regex": [{"pattern": "(tuberculosis|TB)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si estoy tomando esteroides",
+    "answer": "Depende del tipo de esteroide y la dosis. Consulta con el personal médico antes de donar, ya que algunos tratamientos pueden impedir la donación.",
+    "tags": ["medicamentos", "restricciones"],
+    "synonyms": ["donar tomando esteroides", "esteroides y donación", "puedo donar con corticoides"],
+    "regex": [{"pattern": "(esteroide|corticoide)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo enfermedad autoinmune",
+    "answer": "Depende de la enfermedad y su control. Algunas enfermedades autoinmunes impiden la donación, por seguridad tuya y de los receptores.",
+    "tags": ["enfermedades autoinmunes", "restricciones"],
+    "synonyms": ["donar con autoinmunes", "enfermedad autoinmune puedo donar", "donación autoinmune"],
+    "regex": [{"pattern": "(autoinmun|enfermedad autoinmune)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo fiebre amarilla",
+    "answer": "No se recomienda donar si has tenido fiebre amarilla recientemente o has sido vacunado en los últimos 4 semanas. Consulta con el personal médico.",
+    "tags": ["enfermedades", "restricciones", "vacunas"],
+    "synonyms": ["donar después de fiebre amarilla", "vacuna fiebre amarilla y donación", "puedo donar con fiebre amarilla"],
+    "regex": [{"pattern": "(amarilla|vacuna)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo malaria",
+    "answer": "No se permite donar sangre si has tenido malaria recientemente o viajas a zonas endémicas. Debes esperar el tiempo recomendado por el personal médico.",
+    "tags": ["enfermedades", "restricciones", "viajes"],
+    "synonyms": ["donar después de malaria", "viaje malaria puedo donar", "malaria y donación"],
+    "regex": [{"pattern": "(malaria)", "flags": "i"}]
+  },
+  {
+    "tenant": "A",
+    "language": "es",
+    "question": "puedo donar sangre si tengo gripe estacional",
+    "answer": "No es recomendable donar si tienes síntomas de gripe. Espera al menos 7 días después de recuperarte para donar sangre de forma segura.",
+    "tags": ["enfermedades", "restricciones", "salud"],
+    "synonyms": ["donar con gripe estacional", "resfriado puedo donar", "enfermo puedo donar"],
+    "regex": [{"pattern": "(gripe|resfriado)", "flags": "i"}]
+  }
+
+
+]

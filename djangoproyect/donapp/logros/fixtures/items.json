@@ -1,0 +1,40 @@
+[
+    {
+        "model": "logros.items",
+        "pk": 1,
+        "fields": {
+            "name": "XP semanal",
+            "slug": "xp_semanal",
+            "value": 50,
+            "description": "Ficha de XP equivalente a 50xp.",
+            "icon": "assets/items/gold_xp.png",
+            "canjeable": true
+            
+        }
+    },
+    {
+        "model": "logros.items",
+        "pk": 2,
+        "fields": {
+            "name": "XP pequeño",
+            "slug": "xp_pequeño",
+            "value": 10,
+            "description": "Ficha de XP equivalente a 10xp.",
+            "icon": "assets/items/silver_xp.png",
+            "canjeable": true
+            
+        }
+    },
+    {
+        "model": "logros.items",
+        "pk": 3,
+        "fields": {
+            "name": "Medalla de Honor",
+            "slug": "medalla_de_honor",
+            "value": 0,
+            "description": "Medalla otorgada por actos de gran valor.",
+            "icon": "assets/items/gold_medal.png",
+            "canjeable": false
+        }
+    }
+]

@@ -1,0 +1,87 @@
+
+<<character Narrador>>
+<<character Recepcionista>>
+
+title: inicio
+---
+
+Narrador: ¡Bienvenido al simulador de tu primera donación de sangre! 🩸
+Narrador: Antes de comenzar, elige un avatar para acompañarte en este viaje.
+
+-> Elegir a Sofía (tranquila y empática)
+   <<set $avatar = "Sofia">>
+   <<set $confianza = 2>>
+   <<set $miedo = 0>>
+   <<set $player = "avatar1">>
+   <<avatarChosen>>
+   <<jump camino_al_centro>>
+
+-> Elegir a Alex (racional y directo)
+   <<set $avatar = "Alex">>
+   <<set $confianza = 1>>
+   <<set $miedo = 1>>
+   <<set $player = "avatar2">>
+   <<avatarChosen>>
+   <<jump camino_al_centro>>
+
+-> Elegir a Kai (curioso y motivador)
+   <<set $avatar = "Kai">>
+   <<set $confianza = 3>>
+   <<set $miedo = 0>>
+   <<set $player = "avatar3">>
+   <<avatarChosen>>
+   <<jump camino_al_centro>>
+===
+
+title: camino_al_centro
+---
+Narrador: Hoy es el gran día. Estás camino al centro de donación. El corazón late un poco más rápido. ¿Qué sientes?
+
+-> Estoy emocionado. ¡Quiero ayudar! 💪
+   <<add $confianza 1>>
+   <<set $miedo = 0>>
+   {$avatar}: Este sentimiento es real. Hacer algo por otros me llena.
+
+-> Tengo algo de miedo, pero seguiré adelante.
+   <<add $miedo 1>>
+   <<add $confianza 1>>
+   {$avatar}: Está bien tener miedo. Lo importante es no detenerse.
+
+-> ¿Y si duele? Tal vez esto fue una mala idea…
+   <<add $miedo 2>>
+   {$avatar}: Respiro hondo. Nadie dijo que sería fácil, pero vine por una razón.
+
+Narrador: Al llegar, el lugar es limpio, luminoso y con gente amable. La recepcionista te sonríe.
+
+<<jump registro>>
+===
+title: registro
+---
+Recepcionista: ¡Buenos días! ¿Es tu primera vez donando sangre?
+Recepcionista: Solo necesito que completes este formulario. Es sencillo.
+
+-> ¿Qué tipo de datos recopilan?
+   {$avatar}: Mejor saber exactamente qué comparto.
+   Recepcionista: Nombre, edad, peso, antecedentes médicos... Es confidencial.
+   <<add $confianza 1>>
+
+-> ¿Esto es realmente seguro?
+   Recepcionista: Absolutamente. Cada paso es monitoreado por profesionales.
+   <<if $miedo >= 2>>
+      {$avatar}: Aún tengo dudas, pero intento confiar.
+   <<else>>
+      {$avatar}: Eso me tranquiliza. Gracias.
+   <<endif>>
+   <<add $confianza 1>>
+   <<sub $miedo 1>>
+
+-> Claro, sin problema. Aquí tienes. 📝
+   {$avatar}: Esto es parte del proceso. Todo bien.
+   <<add $confianza 2>>
+
+Recepcionista: Excelente. En breve te llamará el equipo médico para la entrevista previa.
+
+Narrador: Te sientas y observas a otros donantes conversando o esperando en silencio.
+
+<<jump entrevista_medica>>
+===
