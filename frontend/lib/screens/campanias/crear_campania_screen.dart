@@ -1,17 +1,18 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'enviar_notificacion_screen.dart'; // pantalla de enviar notificaciones
+import 'enviar_notificacion_screen.dart'; 
 import 'package:donapp_android/CONFIG/api_config.dart';
 import 'package:donapp_android/main.dart';
 import 'package:donapp_android/screens/map/campaign_notifier.dart';
 
-const kGoogleApiKey = "AIzaSyBEPm5qLP76qzqphHV0DHpjkuaqYyNk8z4";
+// API Key sanitizada. Se recomienda usar variables de entorno o flutter_dotenv.
+const kGoogleApiKey = "YOUR_GOOGLE_MAPS_API_KEY";
 
 class CrearCampaniaScreen extends StatefulWidget {
   final String jwtToken;
-  final Map<String, dynamic>? campania;     // edición existente
-  final Map<String, dynamic>? initialForm;  // ← payload del asistente
+  final Map<String, dynamic>? campania;     
+  final Map<String, dynamic>? initialForm;  
 
   const CrearCampaniaScreen({
     super.key,
@@ -37,8 +38,8 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
   String comuna = "";
   DateTime? fecha;
   String horario = "";
-  String grupoSanguineo = "A"; // A | B | AB | O
-  String? rh;                  // + | -
+  String grupoSanguineo = "A"; 
+  String? rh;                  
   double? lat;
   double? lng;
 
@@ -46,7 +47,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
   void initState() {
     super.initState();
 
-    // 1) Si viene una campaña para edición, hidrata primero
     if (widget.campania != null) {
       final c = widget.campania!;
       nombre = (c["nombre"] ?? "").toString();
@@ -62,19 +62,16 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
       if (f.isNotEmpty) fecha = DateTime.tryParse(f);
     }
 
-    // 2) Overlay desde el asistente (solo completa lo faltante)
     _hydrateFromAssistant(widget.initialForm);
 
-    // 3) sincroniza controladores de solo lectura
     _direccionController.text = direccion;
     _comunaROController.text = comuna;
     _fechaROController.text = _fmtFechaVisual(fecha);
   }
 
-  // ===================== Helpers de parseo =====================
   void _applyGrupo(String? g) {
     if (g == null) return;
-    final t = g.trim().toUpperCase(); // ejemplos: O+, O -, O POSITIVO, AB-, A NEG
+    final t = g.trim().toUpperCase(); 
     final re = RegExp(r'^(AB|A|B|O)\s*(\+|-|POS(?:ITIVO)?|NEG(?:ATIVO)?)?$');
     final m = re.firstMatch(t);
     if (m == null) return;
@@ -86,23 +83,20 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
     if (signoRaw == '-' || signoRaw == 'NEG' || signoRaw == 'NEGATIVO') signo = '-';
 
     grupoSanguineo = letra;
-    rh = signo ?? rh; // si no vino signo, no pisa el existente
+    rh = signo ?? rh; 
   }
 
   void _hydrateFromAssistant(Map<String, dynamic>? form) {
     if (form == null) return;
 
-    // titulo -> nombre
     final titulo = (form['titulo'] ?? '').toString();
     if (titulo.isNotEmpty && nombre.isEmpty) nombre = titulo;
 
-    // fecha_iso -> fecha
     final fechaIso = (form['fecha_iso'] ?? '').toString();
     if (fechaIso.isNotEmpty && fecha == null) {
       fecha = DateTime.tryParse(fechaIso);
     }
 
-    // hora/hora_fin -> horario "HH:mm - HH:mm" (si ambas existen)
     final h1 = (form['hora'] ?? '').toString();
     final h2 = (form['hora_fin'] ?? '').toString();
     if (horario.isEmpty) {
@@ -113,19 +107,15 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
       }
     }
 
-    // grupo_sanguineo -> split en grupoSanguineo y rh
     final g = (form['grupo_sanguineo'] ?? '').toString();
     if (g.isNotEmpty) _applyGrupo(g);
 
-    // comuna (solo si no viene desde edición)
     final c = (form['comuna'] ?? '').toString();
     if (comuna.isEmpty && c.isNotEmpty) comuna = c;
 
-    // centro -> como dirección si está vacía
     final centro = (form['centro'] ?? '').toString();
     if (direccion.isEmpty && centro.isNotEmpty) direccion = centro;
 
-    // refresca los RO controllers
     _direccionController.text = direccion;
     _comunaROController.text = comuna;
     _fechaROController.text = _fmtFechaVisual(fecha);
@@ -137,7 +127,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
   String _fmtFechaVisual(DateTime? d) =>
       d == null ? "" : "${d.day}/${d.month}/${d.year}";
 
-  // ===================== Autocomplete (Google Places) =====================
   Future<void> _buscarPredicciones(String input) async {
     if (input.isEmpty) {
       setState(() => _predictions = []);
@@ -153,9 +142,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
       setState(() {
         _predictions = data['predictions'];
       });
-    } else {
-      // ignore: avoid_print
-      print("Error Places API: ${response.body}");
     }
   }
 
@@ -184,13 +170,9 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
         _comunaROController.text = comuna;
         _predictions = [];
       });
-    } else {
-      // ignore: avoid_print
-      print("Error Place Details: ${response.body}");
     }
   }
 
-  // ===================== DatePicker =====================
   Future<void> _seleccionarFecha(BuildContext context) async {
     final picked = await showDatePicker(
       context: context,
@@ -206,7 +188,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
     }
   }
 
-  // ===================== Crear o Editar campaña =====================
   Future<void> _guardarCampania() async {
     if (_formKey.currentState!.validate() && fecha != null) {
       final body = jsonEncode({
@@ -222,8 +203,10 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
       });
 
       final bool esEdicion = widget.campania != null;
+      
+      // Se reemplaza la IP estática por la configuración global de la API
       final url = esEdicion
-          ? "http://10.0.2.2:8000/api/campanias/campanias/${widget.campania!['id']}/"
+          ? ApiConfig.endpoint("api/campanias/campanias/${widget.campania!['id']}/")
           : ApiConfig.endpoint("api/campanias/campanias/");
 
       final response = esEdicion
@@ -243,8 +226,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
       if (response.statusCode == 201 || response.statusCode == 200) {
         final campaniaCreada = jsonDecode(response.body);
 
-        // Notificar creación/edición de campaña
-        debugPrint("Notificando creación/edición de campaña...");
         final notifier = CampaignNotifier(
           apiBaseUrl: ApiConfig.baseUrl,
           authToken: widget.jwtToken,
@@ -262,7 +243,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
           ),
         );
 
-        // Preguntar si quiere ir a notificaciones
         final irANotificaciones = await showDialog<bool>(
           context: context,
           builder: (context) => AlertDialog(
@@ -291,11 +271,9 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
             ),
           );
         } else {
-          Navigator.pop(context, true); // vuelve a la pantalla anterior
+          Navigator.pop(context, true); 
         }
       } else {
-        // ignore: avoid_print
-        print("Error ${response.statusCode}: ${response.body}");
         if (!mounted) return;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -327,7 +305,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                // Nombre
                 TextFormField(
                   initialValue: nombre,
                   decoration: const InputDecoration(labelText: "Nombre"),
@@ -335,8 +312,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
                   validator: (val) => val!.isEmpty ? "Ingrese un nombre" : null,
                 ),
                 const SizedBox(height: 10),
-
-                // Dirección con Autocomplete
                 TextFormField(
                   controller: _direccionController,
                   decoration: const InputDecoration(labelText: "Dirección"),
@@ -360,16 +335,12 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
                     ),
                   ),
                 const SizedBox(height: 10),
-
-                // Comuna (solo lectura, la rellena el autocomplete o el asistente)
                 TextFormField(
                   decoration: const InputDecoration(labelText: "Comuna"),
                   readOnly: true,
                   controller: _comunaROController,
                 ),
                 const SizedBox(height: 10),
-
-                // Fecha (solo lectura con picker)
                 TextFormField(
                   readOnly: true,
                   decoration: InputDecoration(
@@ -382,16 +353,12 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
                   controller: _fechaROController,
                 ),
                 const SizedBox(height: 10),
-
-                // Horario
                 TextFormField(
                   initialValue: horario,
                   decoration: const InputDecoration(labelText: "Horario"),
                   onChanged: (val) => horario = val,
                 ),
                 const SizedBox(height: 10),
-
-                // Grupo sanguíneo (letra) y Rh
                 DropdownButtonFormField(
                   value: grupoSanguineo,
                   items: const [
@@ -405,7 +372,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
                       const InputDecoration(labelText: "Grupo sanguíneo"),
                 ),
                 const SizedBox(height: 10),
-
                 DropdownButtonFormField(
                   value: rh,
                   items: const [
@@ -416,7 +382,6 @@ class _CrearCampaniaScreenState extends State<CrearCampaniaScreen> {
                   decoration: const InputDecoration(labelText: "Rh (opcional)"),
                 ),
                 const SizedBox(height: 20),
-
                 ElevatedButton(
                   onPressed: _guardarCampania,
                   child: Text(esEdicion ? "Guardar cambios" : "Crear campaña"),
