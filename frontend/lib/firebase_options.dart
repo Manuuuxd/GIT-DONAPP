@@ -5,15 +5,6 @@ import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -41,48 +32,48 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBQSLSsYLzkk79Peb4iM_b6I-GLRuL7kyc',
-    appId: '1:684595741464:web:7f27ff3bb40290019a546d',
-    messagingSenderId: '684595741464',
-    projectId: 'donapp-3c6a3',
-    authDomain: 'donapp-3c6a3.firebaseapp.com',
-    storageBucket: 'donapp-3c6a3.firebasestorage.app',
-    measurementId: 'G-SXHZXL9S1D',
+    apiKey: 'YOUR_API_KEY_WEB',
+    appId: 'YOUR_APP_ID_WEB',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'donapp-project-id',
+    authDomain: 'donapp-project-id.firebaseapp.com',
+    storageBucket: 'donapp-project-id.firebasestorage.app',
+    measurementId: 'YOUR_MEASUREMENT_ID',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD_AoWrYEEPqUtRbzmxDuKHHwO6KO8EEhg',
-    appId: '1:684595741464:android:0bf9e13bec51488a9a546d',
-    messagingSenderId: '684595741464',
-    projectId: 'donapp-3c6a3',
-    storageBucket: 'donapp-3c6a3.firebasestorage.app',
+    apiKey: 'YOUR_API_KEY_ANDROID',
+    appId: 'YOUR_APP_ID_ANDROID',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'donapp-project-id',
+    storageBucket: 'donapp-project-id.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCGB1Ve7tD3a0qGzV5sKR-nmAc0sHsO6lM',
-    appId: '1:684595741464:ios:7b38e01a594183ce9a546d',
-    messagingSenderId: '684595741464',
-    projectId: 'donapp-3c6a3',
-    storageBucket: 'donapp-3c6a3.firebasestorage.app',
-    iosBundleId: 'com.example.frontend',
+    apiKey: 'YOUR_API_KEY_IOS',
+    appId: 'YOUR_APP_ID_IOS',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'donapp-project-id',
+    storageBucket: 'donapp-project-id.firebasestorage.app',
+    iosBundleId: 'com.example.your-app',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCGB1Ve7tD3a0qGzV5sKR-nmAc0sHsO6lM',
-    appId: '1:684595741464:ios:7b38e01a594183ce9a546d',
-    messagingSenderId: '684595741464',
-    projectId: 'donapp-3c6a3',
-    storageBucket: 'donapp-3c6a3.firebasestorage.app',
-    iosBundleId: 'com.example.frontend',
+    apiKey: 'YOUR_API_KEY_MACOS',
+    appId: 'YOUR_APP_ID_MACOS',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'donapp-project-id',
+    storageBucket: 'donapp-project-id.firebasestorage.app',
+    iosBundleId: 'com.example.your-app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBQSLSsYLzkk79Peb4iM_b6I-GLRuL7kyc',
-    appId: '1:684595741464:web:759d91e6bb5d51c99a546d',
-    messagingSenderId: '684595741464',
-    projectId: 'donapp-3c6a3',
-    authDomain: 'donapp-3c6a3.firebaseapp.com',
-    storageBucket: 'donapp-3c6a3.firebasestorage.app',
-    measurementId: 'G-146PRGTT7F',
+    apiKey: 'YOUR_API_KEY_WINDOWS',
+    appId: 'YOUR_APP_ID_WINDOWS',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'donapp-project-id',
+    authDomain: 'donapp-project-id.firebaseapp.com',
+    storageBucket: 'donapp-project-id.firebasestorage.app',
+    measurementId: 'YOUR_MEASUREMENT_ID',
   );
 }
